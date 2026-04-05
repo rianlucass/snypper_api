@@ -1,0 +1,17 @@
+{
+  "name": "snypper",
+  "version": "1.0.0",
+  "description": "É uma ferramenta que identifica tendências de produtos a partir da análise de vídeos em plataformas como TikTok",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "rianlucass",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^17.4.0",
+    "express": "^5.2.1",
+    "puppeteer": "^24.40.0"
+  }
+}
