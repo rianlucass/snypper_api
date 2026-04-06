@@ -1,126 +1,82 @@
 /**
- * productService.js — Agrupamento por produto
+ * productService.js — Agrupamento Limpo usando Inteligência (LLM Integration)
  *
- * Lógica de espionagem de tendências:
- * 1. Extrai palavras-chave da descrição do vídeo
- * 2. Gera uma "chave de produto" com as 3 melhores palavras
- * 3. Agrupa todos os vídeos que compartilham a mesma chave
- * 4. Produtos com 2+ vídeos são sinais confiáveis de tendência
+ * Já que usamos a OpenAI, todo trabalho duro e heurístico sobre
+ * linguagem desestruturada foi abstraído da nossa base de código de agrupamento.
  */
 
-// ---------------------------------------------------------------------------
-// Stop words — tudo que NÃO identifica um produto
-// ---------------------------------------------------------------------------
+import fs from "fs";
+import path from "path";
+import { fileURLToPath } from "url";
 
-const STOP_WORDS = new Set([
-    // artigos, preposições, pronomes
-    'de', 'da', 'do', 'das', 'dos', 'para', 'com', 'sem', 'em', 'no', 'na',
-    'nos', 'nas', 'o', 'a', 'e', 'é', 'um', 'uma', 'uns', 'umas', 'ao',
-    'à', 'pelo', 'pela', 'pelos', 'pelas', 'se', 'que', 'mais', 'por',
-    'como', 'esse', 'essa', 'este', 'esta', 'eu', 'ele', 'ela', 'eles',
-    'elas', 'meu', 'minha', 'nosso', 'nossa', 'isso', 'aqui', 'ali',
-    'não', 'sim', 'já', 'só', 'foi', 'ser', 'ter', 'mas', 'pra', 'pro',
-
-    // termos genéricos de produto/compra que não identificam o produto
-    'novo', 'nova', 'novos', 'novas', 'muito', 'pouco', 'bom', 'boa',
-    'top', 'super', 'mega', 'ultra', 'incrível', 'melhor', 'barato',
-    'barata', 'caro', 'cara', 'vale', 'pena', 'ótimo', 'ótima',
-
-    // ações/calls to action
-    'comprei', 'compra', 'compras', 'comprinhas', 'testei', 'teste',
-    'review', 'clica', 'clique', 'segue', 'salva', 'compartilha',
-    'veja', 'olha', 'vem', 'gostei', 'amei', 'recomendo', 'indica',
-
-    // termos de nicho que não identificam produto
-    'achadinho', 'achadinhos', 'achado', 'achados', 'shopee', 'amazon',
-    'mercado', 'livre', 'ali', 'aliexpress', 'shein', 'link', 'bio',
-    'item', 'produto', 'produtos', 'tiktok', 'viral', 'tendência',
-    'promoção', 'oferta', 'desconto', 'frete', 'grátis', 'entrega',
-
-    // conectivos e outros
-    'que', 'quando', 'onde', 'quem', 'por', 'qual', 'quais', 'esse',
-    'dessa', 'desse', 'nesse', 'nessa', 'até', 'após', 'antes',
-    'loja', 'store', 'shop', 'oficial', 'pagina', 'página'
-]);
-
-// ---------------------------------------------------------------------------
-// Extração de keywords
-// ---------------------------------------------------------------------------
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 /**
- * Recebe a descrição bruta de um vídeo e retorna um array de palavras-chave
- * que identificam o produto.
- *
- * @param {string|null} desc
- * @returns {string[]}
+ * Converte o nome limpo extraído pela IA para um Label bonito 
+ * "escova secadora" -> "Escova Secadora"
  */
-function extractKeywords(desc) {
-    if (!desc || typeof desc !== 'string') return [];
-
-    return desc
-        .toLowerCase()
-        // remove emojis e caracteres especiais, mantém letras, números e espaços
-        .replace(/[^\p{L}\p{N}\s]/gu, ' ')
-        .replace(/\s+/g, ' ')
-        .trim()
+function toLabel(name) {
+    if (!name) return "Produto Desconhecido";
+    return name
         .split(' ')
-        .filter(word =>
-            word.length >= 3 &&           // mínimo 3 chars para remover siglas curtas
-            !STOP_WORDS.has(word) &&      // não é stop word
-            !/^\d+$/.test(word)           // não é número puro (preços, etc.)
-        )
-        .slice(0, 6); // pega os primeiros 6 termos relevantes
+        .map(w => w.charAt(0).toUpperCase() + w.slice(1))
+        .join(' ');
 }
 
 /**
- * Gera uma chave de produto a partir das keywords.
- * Usa as 3 primeiras palavras ordenadas para normalizar a ordem.
- *
- * "escova secadora philips" e "philips secadora escova" → "escova_philips_secadora"
- *
- * @param {string[]} keywords
- * @returns {string}
+ * Determina o nível de confiança puramente baseado no número de vezes
+ * em que a IA cruzou e confirmou essa mesma entidade de produto no lote.
  */
-function generateProductKey(keywords) {
-    if (keywords.length === 0) return null;
-    return [...keywords]
-        .slice(0, 3)
-        .sort()
-        .join('_');
+function getConfidence(totalVideos) {
+    if (totalVideos >= 3) return 'high';
+    if (totalVideos >= 2) return 'medium';
+    return 'low';
 }
 
-// ---------------------------------------------------------------------------
-// Agrupamento
-// ---------------------------------------------------------------------------
-
 /**
- * Recebe o array de vídeos do results.json e retorna grupos por produto.
- * Apenas grupos com 2+ vídeos são retornados — sinal mais confiável.
- *
- * @param {object[]} videos
- * @param {object} options
- * @param {number} options.minVideos - mínimo de vídeos para um grupo aparecer (padrão: 2)
- * @returns {object[]}
+ * Agrupa vídeos usando a Entidade Exata que a IA da OpenAI filtrou ("ai_product_name")
  */
-function groupByProduct(videos, { minVideos = 2 } = {}) {
+function groupByProduct(videos, { minVideos = 1 } = {}) {
     const groups = {};
+    let skippedByAI = 0; // Contabiliza quantos a IA determinou como nulo/lista/spam/sem produto.
+    let skippedNoDescription = 0;
+
+    // Carrega o dicionário de sinônimos (se existir) para traduzir o nome bruto da IA para a Categoria Master
+    const dictPath = path.join(__dirname, "../data/product_synonyms.json");
+    let synonyms = {};
+    if (fs.existsSync(dictPath)) {
+        synonyms = JSON.parse(fs.readFileSync(dictPath, "utf-8"));
+    }
 
     for (const video of videos) {
-        // vídeos sem desc ou com erro não contribuem para grupos
-        if (!video.desc || video.error) continue;
+        // Se ocorreu um erro no Puppeteer/scraping
+        if (video.error) continue;
 
-        const keywords = extractKeywords(video.desc);
-        const key      = generateProductKey(keywords);
-        if (!key) continue;
+        if (!video.desc) {
+            skippedNoDescription++;
+            continue;
+        }
 
-        if (!groups[key]) {
-            groups[key] = {
-                productKey: key,
-                keywords,
+        // Recupera o campo enriquecido pela OpenAI. Se nulo, a IA julgou inútil.
+        const productName = video.ai_product_name;
+
+        if (!productName) {
+            skippedByAI++;
+            continue;
+        }
+
+        // Aplica o Dicionário: Se houver um 'master_cluster' mapeado para esse productName, usa ele.
+        // Se a IA recém extraiu e o dicionário ainda não rodou, usa o próprio productName.
+        const clusterKey = synonyms[productName] || productName;
+
+        if (!groups[clusterKey]) {
+            groups[clusterKey] = {
+                productName: clusterKey, // O nome da categoria principal consolidada na prateleira
                 videos: []
             };
         }
-        groups[key].videos.push(video);
+        groups[clusterKey].videos.push(video);
     }
 
     // Agregar métricas de cada grupo
@@ -129,20 +85,21 @@ function groupByProduct(videos, { minVideos = 2 } = {}) {
         .map(g => {
             const valid = g.videos.filter(v => v.score !== null && v.score !== undefined);
             const scores = valid.map(v => v.score);
+            
             const avgScore = scores.length
                 ? Math.round(scores.reduce((a, b) => a + b, 0) / scores.length)
                 : 0;
             const topScore  = scores.length ? Math.max(...scores) : 0;
             const totalViews = g.videos.reduce((s, v) => s + (v.views || 0), 0);
 
-            // criadores únicos — extrai do URL se não tiver campo creator
+            // Filtra os criadores únicos desse produto
             const creators = [...new Set(g.videos.map(v =>
                 v.creator
                     ? `@${v.creator}`
                     : `@${v.url?.split('/@')[1]?.split('/')[0] ?? 'desconhecido'}`
             ))];
 
-            // label dominante (moda)
+            // Moda para saber o Label predominante do Snypper ("🔥 Produto em alta" etc)
             const labelCount = {};
             for (const v of valid) {
                 if (v.label) labelCount[v.label] = (labelCount[v.label] || 0) + 1;
@@ -150,13 +107,13 @@ function groupByProduct(videos, { minVideos = 2 } = {}) {
             const topLabel = Object.entries(labelCount)
                 .sort((a, b) => b[1] - a[1])[0]?.[0] ?? null;
 
-            // viralidade: algum vídeo tem viral_bonus?
             const hasViral = g.videos.some(v => v.viral_bonus);
 
             return {
-                productKey:  g.productKey,
-                keywords:    g.keywords,
-                totalVideos: g.videos.length,
+                productName:  g.productName,
+                productLabel: toLabel(g.productName),
+                confidence:   getConfidence(g.videos.length),
+                totalVideos:  g.videos.length,
                 creators,
                 avgScore,
                 topScore,
@@ -166,14 +123,17 @@ function groupByProduct(videos, { minVideos = 2 } = {}) {
                 videos: g.videos
             };
         })
-        // ordena por: número de vídeos (tendência) → avgScore → topScore
-        .sort((a, b) =>
-            b.totalVideos - a.totalVideos ||
-            b.avgScore    - a.avgScore    ||
-            b.topScore    - a.topScore
-        );
+        // Ordenação Dinâmica Cérebro: 
+        // Produtos com 'alta confiança' importam mais -> Seguido pelo volume de repetições -> Média do engajamento.
+        .sort((a, b) => {
+            const confSort = { 'high': 3, 'medium': 2, 'low': 1 };
+            return (confSort[b.confidence] - confSort[a.confidence]) ||
+                   (b.totalVideos - a.totalVideos) ||
+                   (b.avgScore - a.avgScore) ||
+                   (b.topScore - a.topScore);
+        });
 
-    return aggregated;
+    return { groups: aggregated, skippedByAI, skippedNoDescription };
 }
 
-export default { extractKeywords, generateProductKey, groupByProduct };
+export default { groupByProduct };

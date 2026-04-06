@@ -7,6 +7,6 @@ router.post("/scrape", scrapeController.scrape);
 router.post("/getVideoData", scrapeController.getVideoData);
 router.post("/batch", scrapeController.processBatch);
 router.post("/rescore", scrapeController.rescore);
-router.post("/group",   scrapeController.group);
-
+router.post("/group", scrapeController.group);
+router.post("/enrich", scrapeController.enrichResults);
 export default router;

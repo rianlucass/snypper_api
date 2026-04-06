@@ -1,5 +1,6 @@
 import scraperService  from "../services/scraperService.js";
 import productService  from "../services/productService.js";
+import llmService      from "../services/llmService.js";
 import fs              from "fs";
 import path            from "path";
 import { fileURLToPath } from "url";
@@ -91,7 +92,7 @@ async function rescore(req, res) {
 
 async function group(req, res) {
   try {
-    const minVideos = parseInt(req.body.minVideos) || 2;
+    const minVideos = parseInt(req.body.minVideos) || 1;
     const resultsPath = path.join(__dirname, "../data/results.json");
 
     if (!fs.existsSync(resultsPath)) {
@@ -99,7 +100,7 @@ async function group(req, res) {
     }
 
     const videos = JSON.parse(fs.readFileSync(resultsPath, "utf-8"));
-    const groups = productService.groupByProduct(videos, { minVideos });
+    const { groups, skippedByAI, skippedNoDescription } = productService.groupByProduct(videos, { minVideos });
 
     const withDesc = videos.filter(v => v.desc);
     if (withDesc.length === 0) {
@@ -111,8 +112,11 @@ async function group(req, res) {
 
     return res.status(200).json({
       message: `${groups.length} produto(s) identificado(s) (mínimo ${minVideos} vídeos cada)`,
-      totalVideosAnalisados: withDesc.length,
-      totalVideosSemDesc: videos.length - withDesc.length,
+      stats: {
+        totalVideosAnalisados: withDesc.length,
+        totalVideosSemDesc: skippedNoDescription,
+        skippedByAI: skippedByAI
+      },
       distribution: {
         "🔥 Produto em alta":  groups.filter(g => g.topLabel === "🔥 Produto em alta").length,
         "⬆️ Bom potencial":   groups.filter(g => g.topLabel === "⬆️ Bom potencial").length,
@@ -128,10 +132,47 @@ async function group(req, res) {
   }
 }
 
+async function enrichResults(req, res) {
+  try {
+    const resultsPath = path.join(__dirname, "../data/results.json");
+
+    if (!fs.existsSync(resultsPath)) {
+      return res.status(404).json({ message: "results.json não encontrado." });
+    }
+
+    const videos = JSON.parse(fs.readFileSync(resultsPath, "utf-8"));
+    
+    // Filtra quais precisam ir pra IA (aqueles que tem desc mas ainda não foram extraídos)
+    const pendingEnrichment = videos.filter(v => v.desc && v.ai_product_name === undefined);
+
+    let fullyEnriched = videos;
+
+    if (pendingEnrichment.length > 0) {
+      // Passa apenas os sem IA para economizar (e na primeira vez serão todos)
+      fullyEnriched = await llmService.extractProducts(videos);
+      fs.writeFileSync(resultsPath, JSON.stringify(fullyEnriched, null, 2), "utf-8");
+    }
+
+    // Etapa 2: Pegar os nomes puros já extraídos e rodar pelo Dicionário Mestre de Sinônimos
+    const uniqueExtractedNames = [...new Set(fullyEnriched.map(v => v.ai_product_name).filter(Boolean))];
+    await llmService.clusterProducts(uniqueExtractedNames);
+
+    return res.status(200).json({
+      message: `Enriquecimento concluído! ${pendingEnrichment.length > 0 ? pendingEnrichment.length + ' novas descrições extraídas e ' : ''}Validadas pelo Master Cluster.`,
+      enrichedDataCount: pendingEnrichment.length
+    });
+
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Erro ao chamar IA OpenAI", error: error.message });
+  }
+}
+
 export default {
   scrape,
   getVideoData,
   processBatch,
   rescore,
-  group
+  group,
+  enrichResults
 };

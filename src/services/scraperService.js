@@ -3,6 +3,7 @@ import fs from "fs";
 import path from "path";
 import { fileURLToPath } from "url";
 import scoreService from "./scoreService.js";
+import llmService from "./llmService.js";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -39,8 +40,30 @@ async function retry(fn, attempts = 3, delayMs = 4000) {
 // ---------------------------------------------------------------------------
 
 async function scrapeTikTok({ terms = ["achadinhos"], minViews = 100000 } = {}) {
-    const browser = await puppeteer.launch({ headless: false, defaultViewport: null });
+    const browser = await puppeteer.launch({ 
+        headless: false, 
+        defaultViewport: null,
+        args: [
+            '--disable-blink-features=AutomationControlled',
+            '--no-sandbox',
+            '--disable-setuid-sandbox'
+        ]
+    });
+    
     const page = await browser.newPage();
+    
+    // Stealth
+    await page.evaluateOnNewDocument(() => {
+        Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+    });
+    await page.setUserAgent(
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    );
+    await page.setExtraHTTPHeaders({
+        'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    });
+    
     page.setDefaultNavigationTimeout(45000);
 
     const allVideos = [];
@@ -97,6 +120,11 @@ async function scrapeTikTok({ terms = ["achadinhos"], minViews = 100000 } = {}) 
         console.log(`[Scrape] "${term}" → ${videos.length} vídeos encontrados`);
         allVideos.push(...videos);
 
+        // Salvamento progressivo: garante que os dados já pescados fiquem salvos se o app for interrompido
+        const uniqueProgressivo = Array.from(new Map(allVideos.map(v => [v.link, v])).values());
+        const filePath = path.join(__dirname, "../data/videos.json");
+        fs.writeFileSync(filePath, JSON.stringify(uniqueProgressivo, null, 2));
+
         // pausa aleatória entre termos para não disparar rate limit
         if (term !== terms[terms.length - 1]) {
             const pause = Math.floor(Math.random() * 3000) + 4000; // 4-7s
@@ -108,10 +136,7 @@ async function scrapeTikTok({ terms = ["achadinhos"], minViews = 100000 } = {}) 
     await browser.close();
 
     const unique = Array.from(new Map(allVideos.map(v => [v.link, v])).values());
-    const filePath = path.join(__dirname, "../data/videos.json");
-    fs.writeFileSync(filePath, JSON.stringify(unique, null, 2));
-
-    console.log(`[Scrape] Total salvo: ${unique.length} vídeos únicos`);
+    console.log(`[Scrape] Concluído! Total salvo: ${unique.length} vídeos únicos`);
     return unique;
 }
 
@@ -258,9 +283,24 @@ async function processVideoBatch({ limit = 5, minViews = 100000 } = {}) {
     const resultsPath = path.join(__dirname, "../data/results.json");
 
     const allVideos = JSON.parse(fs.readFileSync(videosPath, "utf-8"));
-    const videos    = allVideos.slice(0, limit);
+    
+    // Verifica na base de resultados quem já foi processado
+    let existingResults = [];
+    if (fs.existsSync(resultsPath)) {
+        existingResults = JSON.parse(fs.readFileSync(resultsPath, "utf-8"));
+    }
+    const processedUrls = new Set(existingResults.map(r => r.url));
+    
+    // Fila inteligente: os pendentes são apenas os que não existem no 'processedUrls'
+    const pendingVideos = allVideos.filter(v => !processedUrls.has(v.link));
+    const videos = pendingVideos.slice(0, limit);
 
-    console.log(`[Batch] Processando ${videos.length} de ${allVideos.length} vídeos (filtro: ${minViews / 1000}K+ views)...`);
+    if (videos.length === 0) {
+        console.log(`[Batch] Todos os vídeos de videos.json já foram processados!`);
+        return [];
+    }
+
+    console.log(`[Batch] Processando ${videos.length} de ${pendingVideos.length} vídeos pendentes (Total Geral: ${allVideos.length} | Filtro: ${minViews / 1000}K+ views)...`);
 
     const browser = await puppeteer.launch({
         headless: false,
@@ -278,6 +318,7 @@ async function processVideoBatch({ limit = 5, minViews = 100000 } = {}) {
     });
 
     const results = [];
+    const locallySkipped = [];
     let skipped = 0;
 
     for (let i = 0; i < videos.length; i++) {
@@ -291,6 +332,7 @@ async function processVideoBatch({ limit = 5, minViews = 100000 } = {}) {
             if (data.views < minViews) {
                 console.log(`[Batch] ⏭ ${data.views.toLocaleString()} views < ${minViews.toLocaleString()} mínimo, pulando`);
                 skipped++;
+                locallySkipped.push({ url: link, skipped: true, views: data.views, scrapedAt: new Date().toISOString() });
                 continue;
             }
 
@@ -311,10 +353,19 @@ async function processVideoBatch({ limit = 5, minViews = 100000 } = {}) {
     await browser.close();
 
     const ranked = scoreService.calculateScore(results);
-    fs.writeFileSync(resultsPath, JSON.stringify(ranked, null, 2));
+    const enriched = await llmService.extractProducts(ranked);
+    
+    // Alimenta o dicionário mestre de similaridades com as novas extrações
+    const uniqueExtractedNames = [...new Set(enriched.map(v => v.ai_product_name).filter(Boolean))];
+    await llmService.clusterProducts(uniqueExtractedNames);
+
+    // Salva juntando o que já existia com os vídeos recém processados, MAIS os que foram pulados
+    const mergedResults = [...existingResults, ...enriched, ...locallySkipped];
+    fs.writeFileSync(resultsPath, JSON.stringify(mergedResults, null, 2));
+    
     console.log(`[Batch] Concluído. Válidos: ${results.length} | Pulados (<${minViews / 1000}K views): ${skipped} | Erros: ${ranked.filter(r => r.error).length}`);
 
-    return ranked;
+    return enriched;
 }
 
 // ---------------------------------------------------------------------------

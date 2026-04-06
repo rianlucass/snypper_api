@@ -1,0 +1,2992 @@
+{
+    "message": "58 produto(s) identificado(s) (mínimo 1 vídeos cada)",
+    "stats": {
+        "totalVideosAnalisados": 187,
+        "totalVideosSemDesc": 158,
+        "skippedByAI": 109
+    },
+    "distribution": {
+        "🔥 Produto em alta": 8,
+        "⬆️ Bom potencial": 17,
+        "📊 Monitorar": 14,
+        "💤 Baixo potencial": 19
+    },
+    "groups": [
+        {
+            "productName": "body splash",
+            "productLabel": "Body Splash",
+            "confidence": "high",
+            "totalVideos": 6,
+            "creators": [
+                "@ester.angela728",
+                "@temnotiktok_",
+                "@pedrovitoroficial_",
+                "@achadosdakami",
+                "@talitabalizaa",
+                "@jullymolinna"
+            ],
+            "avgScore": 31,
+            "topScore": 49,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 11920500,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@ester.angela728/video/7614993572508552468",
+                    "creator": "ester.angela728",
+                    "desc": "Sabe aquele cheiro elegante e marcante? Esse body splash tem. #tiktokshop #bodysplash #promoção #viral ",
+                    "views": 6600000,
+                    "likes": 38800,
+                    "comments": 574,
+                    "saves": 5075,
+                    "shares": 5809,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:34:32.780Z",
+                    "engagement": {
+                        "save_rate": 0.077,
+                        "share_rate": 0.088,
+                        "comment_rate": 0.009,
+                        "like_rate": 0.588
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 5,
+                        "volume": 56
+                    },
+                    "score": 30,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "body splash"
+                },
+                {
+                    "url": "https://www.tiktok.com/@temnotiktok_/video/7564804369565224212",
+                    "creator": "temnotiktok_",
+                    "desc": "#bodysplash #barboursbeauty #oferta #promocao #tiktokshop ",
+                    "views": 517700,
+                    "likes": 2900,
+                    "comments": 247,
+                    "saves": 400,
+                    "shares": 1312,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:34:18.727Z",
+                    "engagement": {
+                        "save_rate": 0.077,
+                        "share_rate": 0.253,
+                        "comment_rate": 0.048,
+                        "like_rate": 0.56
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 19,
+                        "volume": 37
+                    },
+                    "score": 28,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "body splash"
+                },
+                {
+                    "url": "https://www.tiktok.com/@pedrovitoroficial_/video/7606097016728325397",
+                    "creator": "pedrovitoroficial_",
+                    "desc": "Body Splash My Sweet Delight ",
+                    "views": 1200000,
+                    "likes": 8658,
+                    "comments": 227,
+                    "saves": 962,
+                    "shares": 1974,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:35:13.589Z",
+                    "engagement": {
+                        "save_rate": 0.08,
+                        "share_rate": 0.165,
+                        "comment_rate": 0.019,
+                        "like_rate": 0.722
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 13,
+                        "volume": 42
+                    },
+                    "score": 28,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "body splash"
+                },
+                {
+                    "url": "https://www.tiktok.com/@achadosdakami/video/7615115442281090325",
+                    "creator": "achadosdakami",
+                    "desc": "O Body Splash Delight, da Barbour’s Beauty, tá com um preço muito bom! 😍 #bodysplash #perfume #perfumefeminino #mulher #tiktokviral ",
+                    "views": 268600,
+                    "likes": 1696,
+                    "comments": 82,
+                    "saves": 252,
+                    "shares": 486,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:34:46.546Z",
+                    "engagement": {
+                        "save_rate": 0.094,
+                        "share_rate": 0.181,
+                        "comment_rate": 0.031,
+                        "like_rate": 0.631
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 16,
+                        "volume": 28
+                    },
+                    "score": 22,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "body splash"
+                },
+                {
+                    "url": "https://www.tiktok.com/@talitabalizaa/video/7578648442734578952",
+                    "creator": "talitabalizaa",
+                    "desc": "Apaixonada por esse Body Splahs. Ele é perfeito! 💃🏻 #perfume #bodysplash #universofeminino #comprinhas #cheirosa ",
+                    "views": 3200000,
+                    "likes": 37000,
+                    "comments": 2540,
+                    "saves": 5940,
+                    "shares": 9836,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:18:19.560Z",
+                    "engagement": {
+                        "save_rate": 0.186,
+                        "share_rate": 0.307,
+                        "comment_rate": 0.079,
+                        "like_rate": 1.156
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 31,
+                        "volume": 68
+                    },
+                    "score": 49,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "bodysplash"
+                },
+                {
+                    "url": "https://www.tiktok.com/@jullymolinna/video/7621952554984869140",
+                    "creator": "jullymolinna",
+                    "desc": "ME RENDII!!!!🗣️🫢🫢🫵🏻 Vocês já tinham visto esses ou testado??? @Salon Line  #foryou #salonline #publiSL #bodysplash #perfume ",
+                    "views": 134200,
+                    "likes": 7012,
+                    "comments": 37,
+                    "saves": 342,
+                    "shares": 75,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:12:32.068Z",
+                    "engagement": {
+                        "save_rate": 0.255,
+                        "share_rate": 0.056,
+                        "comment_rate": 0.028,
+                        "like_rate": 5.225
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 54,
+                        "volume": 4
+                    },
+                    "score": 29,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "bodysplash"
+                }
+            ]
+        },
+        {
+            "productName": "escova elétrica",
+            "productLabel": "Escova Elétrica",
+            "confidence": "high",
+            "totalVideos": 4,
+            "creators": [
+                "@casalperdidinho",
+                "@sararangelachados",
+                "@amariapaulamota",
+                "@laryssabrendd"
+            ],
+            "avgScore": 45,
+            "topScore": 93,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 10463200,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@casalperdidinho/video/7433191745753484549",
+                    "creator": "casalperdidinho",
+                    "desc": "Escova Elétrica   ✅ Potência: esfrega com força ✅ Bateria: durou  50 minutos ✅ Recarga: 4 horas #teste #escovaeletrica #shopee",
+                    "views": 7500000,
+                    "likes": 678000,
+                    "comments": 6672,
+                    "saves": 80838,
+                    "shares": 76600,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:45:17.748Z",
+                    "engagement": {
+                        "save_rate": 1.078,
+                        "share_rate": 1.021,
+                        "comment_rate": 0.089,
+                        "like_rate": 9.04
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 86,
+                        "volume": 100
+                    },
+                    "score": 93,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "escova elétrica"
+                },
+                {
+                    "url": "https://www.tiktok.com/@sararangelachados/video/7534124312769416453",
+                    "creator": "sararangelachados",
+                    "desc": "😍☝️Cantinho sujo? Nunca mais! Tá no carrinho!😱🔥☝️ #TikTokMeFezComprar #AchadinhosTikTok #LimpezaPesada #CasaOrganizada #EscovaElétrica #LimpezaSemEsforço #FaxinaTop",
+                    "views": 2500000,
+                    "likes": 17200,
+                    "comments": 146,
+                    "saves": 3519,
+                    "shares": 5265,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:28:30.605Z",
+                    "engagement": {
+                        "save_rate": 0.141,
+                        "share_rate": 0.211,
+                        "comment_rate": 0.006,
+                        "like_rate": 0.688
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 23,
+                        "volume": 51
+                    },
+                    "score": 37,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "escova elétrica"
+                },
+                {
+                    "url": "https://www.tiktok.com/@amariapaulamota/video/7568980666642156821",
+                    "creator": "amariapaulamota",
+                    "desc": "Testando a escova gringa hypada do tik tok (ignorem as caretas hahaha não percebo quando estou gravando 😂) #finalizacaodecachos #fyp #cacheadas ",
+                    "views": 107000,
+                    "likes": 6798,
+                    "comments": 75,
+                    "saves": 320,
+                    "shares": 130,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:16:41.055Z",
+                    "engagement": {
+                        "save_rate": 0.299,
+                        "share_rate": 0.121,
+                        "comment_rate": 0.07,
+                        "like_rate": 6.353
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 63,
+                        "volume": 9
+                    },
+                    "score": 36,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "escova"
+                },
+                {
+                    "url": "https://www.tiktok.com/@laryssabrendd/video/7616819149486034183",
+                    "creator": "laryssabrendd",
+                    "desc": "ESCOVA DE LIMPEZA 7 em 1  #escovadelimpeza #escova7em1 #escovadelimpeza7em1 #escovadelimpezaeletrica #escova ",
+                    "views": 356200,
+                    "likes": 1743,
+                    "comments": 55,
+                    "saves": 393,
+                    "shares": 405,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:10:40.264Z",
+                    "engagement": {
+                        "save_rate": 0.11,
+                        "share_rate": 0.114,
+                        "comment_rate": 0.015,
+                        "like_rate": 0.489
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 6,
+                        "volume": 17
+                    },
+                    "score": 12,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "escova de limpeza 7 em 1"
+                }
+            ]
+        },
+        {
+            "productName": "blusa",
+            "productLabel": "Blusa",
+            "confidence": "high",
+            "totalVideos": 4,
+            "creators": [
+                "@egp_loja.oficial",
+                "@marianamagnoo",
+                "@kha.shopping",
+                "@vintge_vogue"
+            ],
+            "avgScore": 34,
+            "topScore": 43,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 2208600,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@egp_loja.oficial/video/7620682680803314964",
+                    "creator": "egp_loja.oficial",
+                    "desc": "#moletom  #modamasculina  #fashion #tendencia  #conjunto ",
+                    "views": 1100000,
+                    "likes": 15900,
+                    "comments": 171,
+                    "saves": 1738,
+                    "shares": 944,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:11:05.298Z",
+                    "engagement": {
+                        "save_rate": 0.158,
+                        "share_rate": 0.086,
+                        "comment_rate": 0.016,
+                        "like_rate": 1.445
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 49,
+                        "volume": 38
+                    },
+                    "score": 43,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "moletom"
+                },
+                {
+                    "url": "https://www.tiktok.com/@marianamagnoo/video/7602365280773278994",
+                    "creator": "marianamagnoo",
+                    "desc": "Essa regata vai ser a sensação esse ano🗣️🗣️ #regatabrasil #copa #roupacopa ",
+                    "views": 652800,
+                    "likes": 4599,
+                    "comments": 27,
+                    "saves": 2078,
+                    "shares": 621,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:12:21.311Z",
+                    "engagement": {
+                        "save_rate": 0.318,
+                        "share_rate": 0.095,
+                        "comment_rate": 0.004,
+                        "like_rate": 0.705
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 43,
+                        "volume": 32
+                    },
+                    "score": 38,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "regata"
+                },
+                {
+                    "url": "https://www.tiktok.com/@kha.shopping/video/7612860238839991559",
+                    "creator": "kha.shopping",
+                    "desc": "Blusa BRASIL Manga Curta.@Kha | Shop 🛒🛍 @Kha | Shop 🛒🛍 @Kha | Shop 🛒🛍 ",
+                    "views": 159500,
+                    "likes": 1384,
+                    "comments": 43,
+                    "saves": 260,
+                    "shares": 338,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:14:56.809Z",
+                    "engagement": {
+                        "save_rate": 0.163,
+                        "share_rate": 0.212,
+                        "comment_rate": 0.027,
+                        "like_rate": 0.868
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 40,
+                        "volume": 19
+                    },
+                    "score": 30,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "blusa"
+                },
+                {
+                    "url": "https://www.tiktok.com/@vintge_vogue/video/7613950187253386514",
+                    "creator": "vintge_vogue",
+                    "desc": "Camisa seleção brasileira tricot no precinho🤩🇧🇷💚💚 #camisafeminina #copa2026 #copadobrasil #camisadetime #promoção ",
+                    "views": 296300,
+                    "likes": 1431,
+                    "comments": 47,
+                    "saves": 324,
+                    "shares": 369,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:14:40.031Z",
+                    "engagement": {
+                        "save_rate": 0.109,
+                        "share_rate": 0.125,
+                        "comment_rate": 0.016,
+                        "like_rate": 0.483
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 29,
+                        "volume": 21
+                    },
+                    "score": 25,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "camisa"
+                }
+            ]
+        },
+        {
+            "productName": "tablet",
+            "productLabel": "Tablet",
+            "confidence": "high",
+            "totalVideos": 3,
+            "creators": [
+                "@mariannegimenes",
+                "@raquelfonseca.p",
+                "@_gabiso"
+            ],
+            "avgScore": 42,
+            "topScore": 54,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 7651600,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@mariannegimenes/video/7618409130474114325",
+                    "creator": "mariannegimenes",
+                    "desc": "Unboxing do tablet com capa teclado + mouse baratinho viral do TikTok shop✨ Querem que eu faça vídeo testando? 👀 #notebook #ipad ",
+                    "views": 4500000,
+                    "likes": 110700,
+                    "comments": 677,
+                    "saves": 18496,
+                    "shares": 4852,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:00:57.883Z",
+                    "engagement": {
+                        "save_rate": 0.411,
+                        "share_rate": 0.108,
+                        "comment_rate": 0.015,
+                        "like_rate": 2.46
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 42,
+                        "volume": 66
+                    },
+                    "score": 54,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "tablet"
+                },
+                {
+                    "url": "https://www.tiktok.com/@raquelfonseca.p/video/7613071591253003528",
+                    "creator": "raquelfonseca.p",
+                    "desc": "Ele é perfeito e bem completo comprem sem medo! #tablet #tabletviral ",
+                    "views": 2600000,
+                    "likes": 62000,
+                    "comments": 672,
+                    "saves": 9907,
+                    "shares": 2617,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:02:37.617Z",
+                    "engagement": {
+                        "save_rate": 0.381,
+                        "share_rate": 0.101,
+                        "comment_rate": 0.026,
+                        "like_rate": 2.385
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 35,
+                        "volume": 58
+                    },
+                    "score": 47,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "tablet"
+                },
+                {
+                    "url": "https://www.tiktok.com/@_gabiso/video/7620090694165646613",
+                    "creator": "_gabiso",
+                    "desc": "Comprei um tablet pela metade do preço aqui no tiktokshop #tablet #conteudoviral #tiktokviral #achadinhos #notebook ",
+                    "views": 551600,
+                    "likes": 7996,
+                    "comments": 106,
+                    "saves": 1490,
+                    "shares": 323,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:09:05.867Z",
+                    "engagement": {
+                        "save_rate": 0.27,
+                        "share_rate": 0.059,
+                        "comment_rate": 0.019,
+                        "like_rate": 1.45
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 25,
+                        "volume": 26
+                    },
+                    "score": 26,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "tablet"
+                }
+            ]
+        },
+        {
+            "productName": "kit 10 cuecas boxer masculino",
+            "productLabel": "Kit 10 Cuecas Boxer Masculino",
+            "confidence": "high",
+            "totalVideos": 3,
+            "creators": [
+                "@palavradevidaa_",
+                "@noronhashop2.com.br",
+                "@uaimatheusmota"
+            ],
+            "avgScore": 25,
+            "topScore": 38,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 3953500,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@palavradevidaa_/video/7621525740089101586",
+                    "creator": "palavradevidaa_",
+                    "desc": "kit de cuecas Boxer de microfibra. #cueca #kitdecuecas #homem #promoção ",
+                    "views": 1200000,
+                    "likes": 8116,
+                    "comments": 108,
+                    "saves": 2335,
+                    "shares": 930,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:10:44.413Z",
+                    "engagement": {
+                        "save_rate": 0.195,
+                        "share_rate": 0.077,
+                        "comment_rate": 0.009,
+                        "like_rate": 0.676
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 37,
+                        "volume": 39
+                    },
+                    "score": 38,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "kit de cuecas boxer"
+                },
+                {
+                    "url": "https://www.tiktok.com/@noronhashop2.com.br/video/7611203774308273428",
+                    "creator": "noronhashop2.com.br",
+                    "desc": "Kit 24 Cuecas Boxer Masculina",
+                    "views": 2300000,
+                    "likes": 7497,
+                    "comments": 131,
+                    "saves": 2121,
+                    "shares": 956,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:10:33.704Z",
+                    "engagement": {
+                        "save_rate": 0.092,
+                        "share_rate": 0.042,
+                        "comment_rate": 0.006,
+                        "like_rate": 0.326
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 0,
+                        "volume": 39
+                    },
+                    "score": 19,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "kit 24 cuecas boxer"
+                },
+                {
+                    "url": "https://www.tiktok.com/@uaimatheusmota/video/7619656873771306241",
+                    "creator": "uaimatheusmota",
+                    "desc": "Kit 10 Cuecas Boxer Masculino Microfibra - Tamanhos Disponíveis: P, M, G, GG",
+                    "views": 453500,
+                    "likes": 2102,
+                    "comments": 64,
+                    "saves": 462,
+                    "shares": 292,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:10:54.821Z",
+                    "engagement": {
+                        "save_rate": 0.102,
+                        "share_rate": 0.064,
+                        "comment_rate": 0.014,
+                        "like_rate": 0.464
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 14,
+                        "volume": 22
+                    },
+                    "score": 18,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "kit 10 cuecas boxer"
+                }
+            ]
+        },
+        {
+            "productName": "luminária de led",
+            "productLabel": "Luminária De Led",
+            "confidence": "medium",
+            "totalVideos": 2,
+            "creators": [
+                "@brunaverona",
+                "@visaotriplox"
+            ],
+            "avgScore": 76,
+            "topScore": 95,
+            "topLabel": "🔥 Produto em alta",
+            "hasViral": false,
+            "totalViews": 8900000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@brunaverona/video/7438723497465056568",
+                    "creator": "brunaverona",
+                    "desc": "Comprei no AliExpress e o link esta salvo no link da minha bio!!  Testei a famosa luminária de água viva com movimentos e iluminação RGB. O efeito é lindo!! Se quiser o efeito que ela está flutuando, basta amarrar um cordão transparente e pendura-lá. Gostaram?  #luminaria #luzrgb #aguaviva #luminariaaguaviva #aliexpressbr #aliexpressbrasil ",
+                    "views": 6400000,
+                    "likes": 664700,
+                    "comments": 2852,
+                    "saves": 101380,
+                    "shares": 53000,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:51:24.939Z",
+                    "engagement": {
+                        "save_rate": 1.584,
+                        "share_rate": 0.828,
+                        "comment_rate": 0.045,
+                        "like_rate": 10.386
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 93,
+                        "volume": 96
+                    },
+                    "score": 95,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "luminária de água viva"
+                },
+                {
+                    "url": "https://www.tiktok.com/@visaotriplox/video/7615609001446837511",
+                    "creator": "visaotriplox",
+                    "desc": "Kit iluminaria solar, essa tem qualidade e resistência. #luminaria #luminariasolar #jardim #piscina #ofertas ",
+                    "views": 2500000,
+                    "likes": 23400,
+                    "comments": 398,
+                    "saves": 4528,
+                    "shares": 12000,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:48:39.500Z",
+                    "engagement": {
+                        "save_rate": 0.181,
+                        "share_rate": 0.48,
+                        "comment_rate": 0.016,
+                        "like_rate": 0.936
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 55,
+                        "volume": 58
+                    },
+                    "score": 56,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "kit de luminária solar"
+                }
+            ]
+        },
+        {
+            "productName": "guarda-chuva",
+            "productLabel": "Guarda-chuva",
+            "confidence": "medium",
+            "totalVideos": 2,
+            "creators": [
+                "@vitorbusiness1",
+                "@athaisfavero"
+            ],
+            "avgScore": 56,
+            "topScore": 61,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 8700000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@vitorbusiness1/video/7516683196080196920",
+                    "creator": "vitorbusiness1",
+                    "desc": "#tiktokshop #guardachuva #videoviral #tik_tok #viralvideos ",
+                    "views": 6800000,
+                    "likes": 141500,
+                    "comments": 3937,
+                    "saves": 18828,
+                    "shares": 28300,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:33:13.939Z",
+                    "engagement": {
+                        "save_rate": 0.277,
+                        "share_rate": 0.416,
+                        "comment_rate": 0.058,
+                        "like_rate": 2.081
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 48,
+                        "volume": 73
+                    },
+                    "score": 61,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "guarda-chuva"
+                },
+                {
+                    "url": "https://www.tiktok.com/@athaisfavero/video/7623027035568475400",
+                    "creator": "athaisfavero",
+                    "desc": "O guarda chuva viralizado no Tik Tok Shop ☂️🤍 #guardachuva #achadinhostiktok #fy #conteudoviral #chuva ",
+                    "views": 1900000,
+                    "likes": 60800,
+                    "comments": 184,
+                    "saves": 6796,
+                    "shares": 1642,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:32:46.742Z",
+                    "engagement": {
+                        "save_rate": 0.358,
+                        "share_rate": 0.086,
+                        "comment_rate": 0.01,
+                        "like_rate": 3.2
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 52,
+                        "volume": 49
+                    },
+                    "score": 50,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "guarda-chuva"
+                }
+            ]
+        },
+        {
+            "productName": "guarda-chuva automático",
+            "productLabel": "Guarda-chuva Automático",
+            "confidence": "medium",
+            "totalVideos": 2,
+            "creators": [
+                "@ex_taxista",
+                "@lobarrosss"
+            ],
+            "avgScore": 50,
+            "topScore": 55,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 15100000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@ex_taxista/video/7615969412096593173",
+                    "creator": "ex_taxista",
+                    "desc": "guarda chuva automatico, guarda chuva, guardachuva, sombrinha automática reforçada, guarda chuva grande e reforçado. Guarda-chuva que fecha sozinho. O guarda-chuva viral. #guardachuvaautomático #guardachuva #guardachuvareforçado ",
+                    "views": 11900000,
+                    "likes": 215400,
+                    "comments": 6353,
+                    "saves": 20547,
+                    "shares": 24600,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:32:26.386Z",
+                    "engagement": {
+                        "save_rate": 0.173,
+                        "share_rate": 0.207,
+                        "comment_rate": 0.053,
+                        "like_rate": 1.81
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 35,
+                        "volume": 74
+                    },
+                    "score": 55,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "guarda-chuva automático"
+                },
+                {
+                    "url": "https://www.tiktok.com/@lobarrosss/video/7594797638558469383",
+                    "creator": "lobarrosss",
+                    "desc": "Guarda-chuva automático blackout #guardachuva #tiktokmefezcomprar #seguranca #praticidade ",
+                    "views": 3200000,
+                    "likes": 50700,
+                    "comments": 354,
+                    "saves": 10003,
+                    "shares": 3944,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:28:00.353Z",
+                    "engagement": {
+                        "save_rate": 0.313,
+                        "share_rate": 0.123,
+                        "comment_rate": 0.011,
+                        "like_rate": 1.584
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 34,
+                        "volume": 56
+                    },
+                    "score": 45,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "guarda-chuva automático"
+                }
+            ]
+        },
+        {
+            "productName": "bermuda short compressão 2 em 1",
+            "productLabel": "Bermuda Short Compressão 2 Em 1",
+            "confidence": "medium",
+            "totalVideos": 2,
+            "creators": [
+                "@caroline.ia97",
+                "@rodrigoshopbrasil"
+            ],
+            "avgScore": 30,
+            "topScore": 36,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 6300000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@caroline.ia97/video/7622265909591215380",
+                    "creator": "caroline.ia97",
+                    "desc": "Bermuda Short Compressão 2 em 1 Dry Fit Modelo Monster",
+                    "views": 4500000,
+                    "likes": 26500,
+                    "comments": 158,
+                    "saves": 3975,
+                    "shares": 2961,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:50:00.304Z",
+                    "engagement": {
+                        "save_rate": 0.088,
+                        "share_rate": 0.066,
+                        "comment_rate": 0.004,
+                        "like_rate": 0.589
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 28,
+                        "volume": 44
+                    },
+                    "score": 36,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "bermuda short compressão 2 em 1"
+                },
+                {
+                    "url": "https://www.tiktok.com/@rodrigoshopbrasil/video/7621750279297420565",
+                    "creator": "rodrigoshopbrasil",
+                    "desc": "Bermuda de compressão 2 em 1. #Academia #Treino #tiktokbr #modamasculina ",
+                    "views": 1800000,
+                    "likes": 9391,
+                    "comments": 69,
+                    "saves": 1730,
+                    "shares": 1057,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:49:24.345Z",
+                    "engagement": {
+                        "save_rate": 0.096,
+                        "share_rate": 0.059,
+                        "comment_rate": 0.004,
+                        "like_rate": 0.522
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 21,
+                        "volume": 28
+                    },
+                    "score": 24,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "bermuda de compressão 2 em 1"
+                }
+            ]
+        },
+        {
+            "productName": "jogo de lençol",
+            "productLabel": "Jogo De Lençol",
+            "confidence": "medium",
+            "totalVideos": 2,
+            "creators": [
+                "@biatikshop",
+                "@angelina.carneiroo"
+            ],
+            "avgScore": 30,
+            "topScore": 31,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 3500000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@biatikshop/video/7610484804269788436",
+                    "creator": "biatikshop",
+                    "desc": "Jogo de lençol fronha Borboletas Micropercal 400 Fios #jogodecama #jogodelencol #lencol #cama #tiktokshop ",
+                    "views": 1300000,
+                    "likes": 9240,
+                    "comments": 94,
+                    "saves": 1009,
+                    "shares": 971,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:50:42.438Z",
+                    "engagement": {
+                        "save_rate": 0.078,
+                        "share_rate": 0.075,
+                        "comment_rate": 0.007,
+                        "like_rate": 0.711
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 38,
+                        "volume": 25
+                    },
+                    "score": 31,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "jogo de lençol"
+                },
+                {
+                    "url": "https://www.tiktok.com/@angelina.carneiroo/video/7606589403204504852",
+                    "creator": "angelina.carneiroo",
+                    "desc": "Jogo de lençol 400 fios baratinho",
+                    "views": 2200000,
+                    "likes": 14300,
+                    "comments": 320,
+                    "saves": 1540,
+                    "shares": 1287,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:10:22.646Z",
+                    "engagement": {
+                        "save_rate": 0.07,
+                        "share_rate": 0.059,
+                        "comment_rate": 0.015,
+                        "like_rate": 0.65
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 17,
+                        "volume": 41
+                    },
+                    "score": 29,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "jogo de lençol"
+                }
+            ]
+        },
+        {
+            "productName": "dispensador de óleo",
+            "productLabel": "Dispensador De Óleo",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@doublebaccen"
+            ],
+            "avgScore": 96,
+            "topScore": 96,
+            "topLabel": "🔥 Produto em alta",
+            "hasViral": true,
+            "totalViews": 18000000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@doublebaccen/video/7349720064024694059",
+                    "creator": "doublebaccen",
+                    "desc": "Oil dispenser So simple #fyp #tiktokmademebuyit #oildispenser #foryou #oliveoil #momsoftiktok #dadsoftiktok  ",
+                    "views": 18000000,
+                    "likes": 1200000,
+                    "comments": 5647,
+                    "saves": 214201,
+                    "shares": 441900,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:29:48.018Z",
+                    "engagement": {
+                        "save_rate": 1.19,
+                        "share_rate": 2.455,
+                        "comment_rate": 0.031,
+                        "like_rate": 6.667
+                    },
+                    "viral_bonus": true,
+                    "score_detail": {
+                        "rate": 97,
+                        "volume": 96
+                    },
+                    "score": 96,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "dispensador de óleo"
+                }
+            ]
+        },
+        {
+            "productName": "hambúrguer",
+            "productLabel": "Hambúrguer",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@metropolesoficial"
+            ],
+            "avgScore": 92,
+            "topScore": 92,
+            "topLabel": "🔥 Produto em alta",
+            "hasViral": false,
+            "totalViews": 22900000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@metropolesoficial/video/7443204481967263032",
+                    "creator": "metropolesoficial",
+                    "desc": "Fã ou hater? 🗣️ 🍔 Um vídeo de uma cliente completamente \"transtornada\" em uma #hamburgueria de Volta Redonda, município do #RiodeJaneiro, voltou a viralizar. O motivo da gritaria? O hambúrguer era gostoso demais.  Nas imagens, a mulher aparece na porta da loja gritando: “Quem fez esse lanche? Eu só quero saber quem fez esse lanche! Por favor, chama quem fez esse lanche”, exclamou a cliente. Os funcionários e a clientela ficaram perplexos até que a chapeira finalmente apareceu, sem entender nada. Foi aí que a mulher revelou o motivo do alvoroço: o hambúrguer estava maravilhoso. “Foi você? Menina, eu vim aqui só para agradecer porque esse lanche está maravilhoso. Melhor lanche do mundo”, disse a cliente, indo em direção à cozinheira para lhe dar um abraço e acalmá-la. O vídeo acumulou mais de 7 milhões de visualizações e rendeu boas risadas dos internautas. “Se me apertasse mais dois minutos eu entregava a mim mesmo, e eu nunca fiz lanche”, brincou um usuário. Outro pessoa comentou: “Até eu fiquei intimidada”. Um terceiro ainda acrescentou: “Minha ansiedade ficou preocupada, mesmo não estando aí”.  🤣 #tiktoknotícias 📹 @Hambúrguer_da22  | @myhoodbr ",
+                    "views": 22900000,
+                    "likes": 2000000,
+                    "comments": 16700,
+                    "saves": 96422,
+                    "shares": 34600,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:21:45.752Z",
+                    "engagement": {
+                        "save_rate": 0.421,
+                        "share_rate": 0.151,
+                        "comment_rate": 0.073,
+                        "like_rate": 8.734
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 83,
+                        "volume": 100
+                    },
+                    "score": 92,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "hambúrguer"
+                }
+            ]
+        },
+        {
+            "productName": "teclado mecânico",
+            "productLabel": "Teclado Mecânico",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@heartdefensor"
+            ],
+            "avgScore": 86,
+            "topScore": 86,
+            "topLabel": "🔥 Produto em alta",
+            "hasViral": false,
+            "totalViews": 19200000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@heartdefensor/video/7000926248541228293",
+                    "creator": "heartdefensor",
+                    "desc": "unboxing my new retro mechanical bluetooth keyboard for my iPad 🥲 LINK IN BIO #amazonfinds #amazonmusthaves #tiktokmademebuyit",
+                    "views": 19200000,
+                    "likes": 2000000,
+                    "comments": 5523,
+                    "saves": 146849,
+                    "shares": 51700,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:31:08.027Z",
+                    "engagement": {
+                        "save_rate": 0.765,
+                        "share_rate": 0.269,
+                        "comment_rate": 0.029,
+                        "like_rate": 10.417
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 87,
+                        "volume": 85
+                    },
+                    "score": 86,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "teclado mecânico"
+                }
+            ]
+        },
+        {
+            "productName": "carregador inteligente",
+            "productLabel": "Carregador Inteligente",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@carolinacorrea55"
+            ],
+            "avgScore": 82,
+            "topScore": 82,
+            "topLabel": "🔥 Produto em alta",
+            "hasViral": false,
+            "totalViews": 2300000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@carolinacorrea55/video/7011228972763729158",
+                    "creator": "carolinacorrea55",
+                    "desc": "Gente esse carregador  ❤️👄❤️ #foiparaafy? #comprasonline #FuriosoChallenge #unboxi #magiccharger",
+                    "views": 2300000,
+                    "likes": 317700,
+                    "comments": 3012,
+                    "saves": 17417,
+                    "shares": 4227,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:18:47.227Z",
+                    "engagement": {
+                        "save_rate": 0.757,
+                        "share_rate": 0.184,
+                        "comment_rate": 0.131,
+                        "like_rate": 13.813
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 97,
+                        "volume": 66
+                    },
+                    "score": 82,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "carregador"
+                }
+            ]
+        },
+        {
+            "productName": "batata frita",
+            "productLabel": "Batata Frita",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@lucasranngel"
+            ],
+            "avgScore": 82,
+            "topScore": 82,
+            "topLabel": "🔥 Produto em alta",
+            "hasViral": false,
+            "totalViews": 5100000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@lucasranngel/video/7330762108470152454",
+                    "creator": "lucasranngel",
+                    "desc": "Tive que experimentar fazer a batata frita viral 😍🍟 Teriam coragem???",
+                    "views": 5100000,
+                    "likes": 541800,
+                    "comments": 1075,
+                    "saves": 32403,
+                    "shares": 5887,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:17:03.917Z",
+                    "engagement": {
+                        "save_rate": 0.635,
+                        "share_rate": 0.115,
+                        "comment_rate": 0.021,
+                        "like_rate": 10.624
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 92,
+                        "volume": 73
+                    },
+                    "score": 82,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "batata frita"
+                }
+            ]
+        },
+        {
+            "productName": "ralador",
+            "productLabel": "Ralador",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@diegogloow"
+            ],
+            "avgScore": 80,
+            "topScore": 80,
+            "topLabel": "🔥 Produto em alta",
+            "hasViral": false,
+            "totalViews": 3400000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@diegogloow/video/7470269505462390022",
+                    "creator": "diegogloow",
+                    "desc": "Testando ralador da shopee #shopee #viral_video #humor ",
+                    "views": 3400000,
+                    "likes": 416900,
+                    "comments": 5332,
+                    "saves": 16917,
+                    "shares": 12200,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:26:41.283Z",
+                    "engagement": {
+                        "save_rate": 0.498,
+                        "share_rate": 0.359,
+                        "comment_rate": 0.157,
+                        "like_rate": 12.262
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 90,
+                        "volume": 69
+                    },
+                    "score": 80,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "ralador"
+                }
+            ]
+        },
+        {
+            "productName": "sorvete",
+            "productLabel": "Sorvete",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@haru"
+            ],
+            "avgScore": 80,
+            "topScore": 80,
+            "topLabel": "🔥 Produto em alta",
+            "hasViral": false,
+            "totalViews": 4200000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@haru/video/7601671018452880658",
+                    "creator": "haru",
+                    "desc": "Provando o sorvete viral da coreia🇰🇷",
+                    "views": 4200000,
+                    "likes": 429200,
+                    "comments": 2590,
+                    "saves": 12418,
+                    "shares": 8565,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:16:02.658Z",
+                    "engagement": {
+                        "save_rate": 0.296,
+                        "share_rate": 0.204,
+                        "comment_rate": 0.062,
+                        "like_rate": 10.219
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 88,
+                        "volume": 72
+                    },
+                    "score": 80,
+                    "label": "🔥 Produto em alta",
+                    "ai_product_name": "sorvete"
+                }
+            ]
+        },
+        {
+            "productName": "jaqueta",
+            "productLabel": "Jaqueta",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@isismartins_"
+            ],
+            "avgScore": 74,
+            "topScore": 74,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 238400,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@isismartins_/video/7611679334599757077",
+                    "creator": "isismartins_",
+                    "desc": "jaqueta viral da Zara por 1/2 no Aliexpress 🤎 . // #zarahaul #aliexpressfinds #viraljacket ",
+                    "views": 238400,
+                    "likes": 20100,
+                    "comments": 807,
+                    "saves": 8120,
+                    "shares": 1867,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:47:50.612Z",
+                    "engagement": {
+                        "save_rate": 3.406,
+                        "share_rate": 0.783,
+                        "comment_rate": 0.339,
+                        "like_rate": 8.431
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 97,
+                        "volume": 51
+                    },
+                    "score": 74,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "jaqueta"
+                }
+            ]
+        },
+        {
+            "productName": "lâmpada",
+            "productLabel": "Lâmpada",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@itsjellylume"
+            ],
+            "avgScore": 73,
+            "topScore": 73,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 7200000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@itsjellylume/video/7532322473589755191",
+                    "creator": "itsjellylume",
+                    "desc": "Now I get it 😭🪼 #jellyfish #roomdecor #aesthetic #lamp #tiktokmademebuyit #asmr ",
+                    "views": 7200000,
+                    "likes": 408100,
+                    "comments": 2982,
+                    "saves": 57170,
+                    "shares": 31200,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:31:44.382Z",
+                    "engagement": {
+                        "save_rate": 0.794,
+                        "share_rate": 0.433,
+                        "comment_rate": 0.041,
+                        "like_rate": 5.668
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 69,
+                        "volume": 78
+                    },
+                    "score": 73,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "lâmpada"
+                }
+            ]
+        },
+        {
+            "productName": "máquina de lavar portátil",
+            "productLabel": "Máquina De Lavar Portátil",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@magalu"
+            ],
+            "avgScore": 72,
+            "topScore": 72,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 23200000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@magalu/video/7006320245136821509",
+                    "creator": "magalu",
+                    "desc": "Máquina de lavar portátil? Claro que #TemNoMagalu 🧺💙 #Magalu #LavarRoupa #TikTokMeFezComprar",
+                    "views": 23200000,
+                    "likes": 1700000,
+                    "comments": 9696,
+                    "saves": 46772,
+                    "shares": 58000,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:29:31.009Z",
+                    "engagement": {
+                        "save_rate": 0.202,
+                        "share_rate": 0.25,
+                        "comment_rate": 0.042,
+                        "like_rate": 7.328
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 61,
+                        "volume": 82
+                    },
+                    "score": 72,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "máquina de lavar portátil"
+                }
+            ]
+        },
+        {
+            "productName": "modelador de cabelo sem fio",
+            "productLabel": "Modelador De Cabelo Sem Fio",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@lopwert"
+            ],
+            "avgScore": 70,
+            "topScore": 70,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 37800000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@lopwert/video/7076747539537497350",
+                    "creator": "lopwert",
+                    "desc": "No words. #lopwert #cordlesscurler #beauty #hair #unboxing #review #tiktokmademebuyit",
+                    "views": 37800000,
+                    "likes": 1800000,
+                    "comments": 16100,
+                    "saves": 58998,
+                    "shares": 62200,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:31:52.603Z",
+                    "engagement": {
+                        "save_rate": 0.156,
+                        "share_rate": 0.165,
+                        "comment_rate": 0.043,
+                        "like_rate": 4.762
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 55,
+                        "volume": 84
+                    },
+                    "score": 70,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "modelador de cabelo sem fio"
+                }
+            ]
+        },
+        {
+            "productName": "pimentão recheado",
+            "productLabel": "Pimentão Recheado",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@vivicake.real"
+            ],
+            "avgScore": 69,
+            "topScore": 69,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 667100,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@vivicake.real/video/7622052459975888148",
+                    "creator": "vivicake.real",
+                    "desc": "Resolvi provar esse pimentão recheado que tá viralizado! ",
+                    "views": 667100,
+                    "likes": 76400,
+                    "comments": 326,
+                    "saves": 2622,
+                    "shares": 1514,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:15:51.698Z",
+                    "engagement": {
+                        "save_rate": 0.393,
+                        "share_rate": 0.227,
+                        "comment_rate": 0.049,
+                        "like_rate": 11.453
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 94,
+                        "volume": 44
+                    },
+                    "score": 69,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "pimentão recheado"
+                }
+            ]
+        },
+        {
+            "productName": "perfume",
+            "productLabel": "Perfume",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@annalu.santos"
+            ],
+            "avgScore": 66,
+            "topScore": 66,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 576500,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@annalu.santos/video/7164180243169774853",
+                    "creator": "annalu.santos",
+                    "desc": "Ok, esse eu passei dos limites! Comprei com a @majuparfums_  #perfume #gabrielaversiani #cheirosa #tiktok ",
+                    "views": 576500,
+                    "likes": 52800,
+                    "comments": 439,
+                    "saves": 7374,
+                    "shares": 293,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:37:52.779Z",
+                    "engagement": {
+                        "save_rate": 1.279,
+                        "share_rate": 0.051,
+                        "comment_rate": 0.076,
+                        "like_rate": 9.159
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 89,
+                        "volume": 44
+                    },
+                    "score": 66,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "perfume"
+                }
+            ]
+        },
+        {
+            "productName": "removedor de pelos",
+            "productLabel": "Removedor De Pelos",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@gammanfredi"
+            ],
+            "avgScore": 66,
+            "topScore": 66,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 21500000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@gammanfredi/video/7548211147133013304",
+                    "creator": "gammanfredi",
+                    "desc": "Testando o removedor de pelos viral da internet ",
+                    "views": 21500000,
+                    "likes": 455900,
+                    "comments": 1749,
+                    "saves": 79698,
+                    "shares": 51000,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:14:05.120Z",
+                    "engagement": {
+                        "save_rate": 0.371,
+                        "share_rate": 0.237,
+                        "comment_rate": 0.008,
+                        "like_rate": 2.12
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 38,
+                        "volume": 94
+                    },
+                    "score": 66,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "removedor de pelos"
+                }
+            ]
+        },
+        {
+            "productName": "guarda-chuva chaveiro",
+            "productLabel": "Guarda-chuva Chaveiro",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@maritips_"
+            ],
+            "avgScore": 64,
+            "topScore": 64,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 4900000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@maritips_/video/7620465463042067732",
+                    "creator": "maritips_",
+                    "desc": "simplesmente um guarda-chuva CHAVEIRO! super lindo, prático e funcional, perfeito pra quem vive perdendo guarda-chuva por aí (tipo eu) 🤣 #utilidades #conteudoviral #guardachuva #universofeminino #fyppp ",
+                    "views": 4900000,
+                    "likes": 76400,
+                    "comments": 1436,
+                    "saves": 11606,
+                    "shares": 12000,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:48:09.007Z",
+                    "engagement": {
+                        "save_rate": 0.237,
+                        "share_rate": 0.245,
+                        "comment_rate": 0.029,
+                        "like_rate": 1.559
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 59,
+                        "volume": 68
+                    },
+                    "score": 64,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "guarda-chuva chaveiro"
+                }
+            ]
+        },
+        {
+            "productName": "garrafa térmica",
+            "productLabel": "Garrafa Térmica",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@mauricioborba_"
+            ],
+            "avgScore": 64,
+            "topScore": 64,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 677100,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@mauricioborba_/video/7279801764356934917",
+                    "creator": "mauricioborba_",
+                    "desc": "Ela é térmica e ainda mede temperatua por só 20 reais???  #aliexpress #shopee #viral #garrafatermica #garrafa ",
+                    "views": 677100,
+                    "likes": 57700,
+                    "comments": 450,
+                    "saves": 3624,
+                    "shares": 1452,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:25:15.198Z",
+                    "engagement": {
+                        "save_rate": 0.535,
+                        "share_rate": 0.214,
+                        "comment_rate": 0.066,
+                        "like_rate": 8.522
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 79,
+                        "volume": 48
+                    },
+                    "score": 64,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "garrafa térmica"
+                }
+            ]
+        },
+        {
+            "productName": "computador",
+            "productLabel": "Computador",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@toptech_oficial"
+            ],
+            "avgScore": 62,
+            "topScore": 62,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 791600,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@toptech_oficial/video/7580854576341945620",
+                    "creator": "toptech_oficial",
+                    "desc": "Comprei o PC do TIKTOK SHOP!!! #computador #pc #pcgamer #tiktokshop #produtos ",
+                    "views": 791600,
+                    "likes": 61300,
+                    "comments": 457,
+                    "saves": 5121,
+                    "shares": 918,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:04:43.896Z",
+                    "engagement": {
+                        "save_rate": 0.647,
+                        "share_rate": 0.116,
+                        "comment_rate": 0.058,
+                        "like_rate": 7.744
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 79,
+                        "volume": 46
+                    },
+                    "score": 62,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "computador"
+                }
+            ]
+        },
+        {
+            "productName": "pimentão com cream cheese",
+            "productLabel": "Pimentão Com Cream Cheese",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@cozinheirotommy"
+            ],
+            "avgScore": 62,
+            "topScore": 62,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 1100000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@cozinheirotommy/video/7617854400220007701",
+                    "creator": "cozinheirotommy",
+                    "desc": "PROVEI O PIMENTÃO COM CREAM CHEESE E TAKIS QUE VIRALIZOU!!! 😱 #pimentao #receitafacil #receitasimples #viralizounotiktok #comidarapida ",
+                    "views": 1100000,
+                    "likes": 64100,
+                    "comments": 343,
+                    "saves": 4208,
+                    "shares": 5574,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:16:52.240Z",
+                    "engagement": {
+                        "save_rate": 0.383,
+                        "share_rate": 0.507,
+                        "comment_rate": 0.031,
+                        "like_rate": 5.827
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 69,
+                        "volume": 55
+                    },
+                    "score": 62,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "pimentão com cream cheese"
+                }
+            ]
+        },
+        {
+            "productName": "óleo do jasmim sambac",
+            "productLabel": "Óleo Do Jasmim Sambac",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@annalu.santos"
+            ],
+            "avgScore": 61,
+            "topScore": 61,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 731600,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@annalu.santos/video/7519899099567639813",
+                    "creator": "annalu.santos",
+                    "desc": "Fui totalmente influenciada e corri para comprar o tal óleo do jasmim sambac! Eu só achei no mercado livre só colocar esse ID FGVJEP-W38F na barra de pesquisa!  #perfume #cheirosa #dicasdeperfume ",
+                    "views": 731600,
+                    "likes": 30000,
+                    "comments": 498,
+                    "saves": 7319,
+                    "shares": 4669,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:35:50.379Z",
+                    "engagement": {
+                        "save_rate": 1,
+                        "share_rate": 0.638,
+                        "comment_rate": 0.068,
+                        "like_rate": 4.101
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 66,
+                        "volume": 56
+                    },
+                    "score": 61,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "óleo do jasmim sambac"
+                }
+            ]
+        },
+        {
+            "productName": "mini difusor aromático",
+            "productLabel": "Mini Difusor Aromático",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@susanadeoliveira5"
+            ],
+            "avgScore": 59,
+            "topScore": 59,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 9900000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@susanadeoliveira5/video/7622751119940291861",
+                    "creator": "susanadeoliveira5",
+                    "desc": "Mini difusor aromático menos de 15 reais 😳🤌🏼 ##TikTokShopBR44 ",
+                    "views": 9900000,
+                    "likes": 102400,
+                    "comments": 773,
+                    "saves": 28271,
+                    "shares": 12900,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:49:00.791Z",
+                    "engagement": {
+                        "save_rate": 0.286,
+                        "share_rate": 0.13,
+                        "comment_rate": 0.008,
+                        "like_rate": 1.034
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 45,
+                        "volume": 73
+                    },
+                    "score": 59,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "mini difusor aromático"
+                }
+            ]
+        },
+        {
+            "productName": "escorredor de louças",
+            "productLabel": "Escorredor De Louças",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@suassunafernande"
+            ],
+            "avgScore": 59,
+            "topScore": 59,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 164900,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@suassunafernande/video/7325132658999053574",
+                    "creator": "suassunafernande",
+                    "desc": "ACHADOS NA AMAZON 2024. FINALMENTE, O ESCORREDOR DE LOUÇAS MAIS VENDIDO NA AMAZON ESTÁ DE VOLTA EM ESTOQUE. #achadosnaamazon2024 #achadinhosdaamazon #achadosdaamazon #acheinaamazon ",
+                    "views": 164900,
+                    "likes": 2354,
+                    "comments": 65,
+                    "saves": 1272,
+                    "shares": 1953,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:16:16.554Z",
+                    "engagement": {
+                        "save_rate": 0.771,
+                        "share_rate": 1.184,
+                        "comment_rate": 0.039,
+                        "like_rate": 1.428
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 80,
+                        "volume": 38
+                    },
+                    "score": 59,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "escorredor de louças"
+                }
+            ]
+        },
+        {
+            "productName": "copo de água magnético",
+            "productLabel": "Copo De Água Magnético",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@seyis.shop"
+            ],
+            "avgScore": 56,
+            "topScore": 56,
+            "topLabel": "⬆️ Bom potencial",
+            "hasViral": false,
+            "totalViews": 2000000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@seyis.shop/video/7506038468372483358",
+                    "creator": "seyis.shop",
+                    "desc": "Milkshake Rotating Magnetic Water Cup #tiktokmademebuyit #amazonfinds #amazon #homemade",
+                    "views": 2000000,
+                    "likes": 35500,
+                    "comments": 1277,
+                    "saves": 7542,
+                    "shares": 9735,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:31:34.771Z",
+                    "engagement": {
+                        "save_rate": 0.377,
+                        "share_rate": 0.487,
+                        "comment_rate": 0.064,
+                        "like_rate": 1.775
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 50,
+                        "volume": 62
+                    },
+                    "score": 56,
+                    "label": "⬆️ Bom potencial",
+                    "ai_product_name": "copo de água magnético"
+                }
+            ]
+        },
+        {
+            "productName": "pipoqueira",
+            "productLabel": "Pipoqueira",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@fabianajustus"
+            ],
+            "avgScore": 54,
+            "topScore": 54,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 2700000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@fabianajustus/video/7617682251844701460",
+                    "creator": "fabianajustus",
+                    "desc": "Comprei essa pipoqueira aqui no #tiktokshop e achei ela incrível! Fácil, prática e não faz sujeira! #pipoqueira #dica #comprinhas #fyp ",
+                    "views": 2700000,
+                    "likes": 88000,
+                    "comments": 650,
+                    "saves": 8600,
+                    "shares": 5118,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:06:50.163Z",
+                    "engagement": {
+                        "save_rate": 0.319,
+                        "share_rate": 0.19,
+                        "comment_rate": 0.024,
+                        "like_rate": 3.259
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 46,
+                        "volume": 61
+                    },
+                    "score": 54,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "pipoqueira"
+                }
+            ]
+        },
+        {
+            "productName": "secador",
+            "productLabel": "Secador",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@ss.nah"
+            ],
+            "avgScore": 49,
+            "topScore": 49,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 103800,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@ss.nah/video/7554185767531154700",
+                    "creator": "ss.nah",
+                    "desc": "O mais novo PS5 das garotas: resenha completinha testando o secador GOKOCO 7 em 1 💗🌸🎀 o recebidos que amamos por aqui, obrigada mais uma vez. (Link do secador na shopee: https://s.shopee.com.br/6VElTWrEQv )  #achadinhosshopee #unboxingasmr #gokoco #comprinhas #girlytok ",
+                    "views": 103800,
+                    "likes": 4653,
+                    "comments": 140,
+                    "saves": 1144,
+                    "shares": 833,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:45:46.682Z",
+                    "engagement": {
+                        "save_rate": 1.102,
+                        "share_rate": 0.803,
+                        "comment_rate": 0.135,
+                        "like_rate": 4.483
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 72,
+                        "volume": 26
+                    },
+                    "score": 49,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "secador"
+                }
+            ]
+        },
+        {
+            "productName": "camiseta masculina polo",
+            "productLabel": "Camiseta Masculina Polo",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@vanessacoradimshop"
+            ],
+            "avgScore": 49,
+            "topScore": 49,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 1300000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@vanessacoradimshop/video/7620521276360150293",
+                    "creator": "vanessacoradimshop",
+                    "desc": "100% mood copa🤩 a T-shirt perfeita 💚💛 #copa #lookcopa #modafeminina #tshirt #brasil ",
+                    "views": 1300000,
+                    "likes": 16400,
+                    "comments": 121,
+                    "saves": 4431,
+                    "shares": 1068,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:13:57.725Z",
+                    "engagement": {
+                        "save_rate": 0.341,
+                        "share_rate": 0.082,
+                        "comment_rate": 0.009,
+                        "like_rate": 1.262
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 54,
+                        "volume": 43
+                    },
+                    "score": 49,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "t-shirt"
+                }
+            ]
+        },
+        {
+            "productName": "escova de prato giratória",
+            "productLabel": "Escova De Prato Giratória",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@dailysunbeam"
+            ],
+            "avgScore": 49,
+            "topScore": 49,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 2100000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@dailysunbeam/video/7606012776712015122",
+                    "creator": "dailysunbeam",
+                    "desc": "Say goodbye to hand scrubbing. ✨ 360° spinning dish brush with soap dispenser & long handle. #spinbrush #soapdispenser #longhandle #tiktokmademebuyit#fyp",
+                    "views": 2100000,
+                    "likes": 24300,
+                    "comments": 526,
+                    "saves": 6635,
+                    "shares": 8376,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:30:00.452Z",
+                    "engagement": {
+                        "save_rate": 0.316,
+                        "share_rate": 0.399,
+                        "comment_rate": 0.025,
+                        "like_rate": 1.157
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 39,
+                        "volume": 59
+                    },
+                    "score": 49,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "escova de prato giratória"
+                }
+            ]
+        },
+        {
+            "productName": "maleta de acessórios",
+            "productLabel": "Maleta De Acessórios",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@sophiapferreira"
+            ],
+            "avgScore": 49,
+            "topScore": 49,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 613500,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@sophiapferreira/video/7536334752840764677",
+                    "creator": "sophiapferreira",
+                    "desc": "obrigada Tiktok shop por ter me influenciado a comprar essa maleta de acessórios PERFEITA 🥹🥹🥹 (o link da que eu comprei tá nesse desenho do carrinho laranja escrito “Porta joias couro”)",
+                    "views": 613500,
+                    "likes": 24700,
+                    "comments": 95,
+                    "saves": 3472,
+                    "shares": 599,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:38:44.091Z",
+                    "engagement": {
+                        "save_rate": 0.566,
+                        "share_rate": 0.098,
+                        "comment_rate": 0.015,
+                        "like_rate": 4.026
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 56,
+                        "volume": 41
+                    },
+                    "score": 49,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "maleta de acessórios"
+                }
+            ]
+        },
+        {
+            "productName": "maquina de gelo",
+            "productLabel": "Maquina De Gelo",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@luisasoaress11"
+            ],
+            "avgScore": 49,
+            "topScore": 49,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 361800,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@luisasoaress11/video/7607104874832006420",
+                    "creator": "luisasoaress11",
+                    "desc": "Achado do TikTok shop que valeu MUITO a pena, ela é pequena, portátil e ainda faz gelo super rápido! #maquinadegelo #gelo ",
+                    "views": 361800,
+                    "likes": 8432,
+                    "comments": 80,
+                    "saves": 2807,
+                    "shares": 2076,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:04:26.718Z",
+                    "engagement": {
+                        "save_rate": 0.776,
+                        "share_rate": 0.574,
+                        "comment_rate": 0.022,
+                        "like_rate": 2.331
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 56,
+                        "volume": 41
+                    },
+                    "score": 49,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "maquina de gelo"
+                }
+            ]
+        },
+        {
+            "productName": "moinho lavador de frutas",
+            "productLabel": "Moinho Lavador De Frutas",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@familialiu"
+            ],
+            "avgScore": 45,
+            "topScore": 45,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 3000000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@familialiu/video/7280625780932021509",
+                    "creator": "familialiu",
+                    "desc": "Testei o moinho lavador de frutas viral da china 😱🍇 ✅Link do produto na Bio 👉@familialiu (produto 06 máquina de lavar frutas) #aliexpress #gienliu #frutas #foryoupage #viralizou #aliexpressproducts",
+                    "views": 3000000,
+                    "likes": 98400,
+                    "comments": 581,
+                    "saves": 7358,
+                    "shares": 1330,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:17:12.620Z",
+                    "engagement": {
+                        "save_rate": 0.245,
+                        "share_rate": 0.044,
+                        "comment_rate": 0.019,
+                        "like_rate": 3.28
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 40,
+                        "volume": 51
+                    },
+                    "score": 45,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "moinho lavador de frutas"
+                }
+            ]
+        },
+        {
+            "productName": "fatiador elétrico de alimentos",
+            "productLabel": "Fatiador Elétrico De Alimentos",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@lua.indicou"
+            ],
+            "avgScore": 41,
+            "topScore": 41,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 167400,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@lua.indicou/video/7622635752286981396",
+                    "creator": "lua.indicou",
+                    "desc": "Fatiador elétrico de alimentos  . . . #achadinhos #gadgets #amazonfinds #dicasdecozinha #luaindica ",
+                    "views": 167400,
+                    "likes": 1828,
+                    "comments": 81,
+                    "saves": 247,
+                    "shares": 859,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:15:45.187Z",
+                    "engagement": {
+                        "save_rate": 0.148,
+                        "share_rate": 0.513,
+                        "comment_rate": 0.048,
+                        "like_rate": 1.092
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 57,
+                        "volume": 26
+                    },
+                    "score": 41,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "fatiador elétrico de alimentos"
+                }
+            ]
+        },
+        {
+            "productName": "kit de canetas",
+            "productLabel": "Kit De Canetas",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@achadinhos.da.pah_"
+            ],
+            "avgScore": 40,
+            "topScore": 40,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 623200,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@achadinhos.da.pah_/video/7555319019146890507",
+                    "creator": "achadinhos.da.pah_",
+                    "desc": "Valeu cada centavo! 🖊️✨ #O kit vem com 36 cores diferentes, cheirinho de frutas, glitter e uma escrita super macia. 🍓🍍 É criativo, divertido e virou o presente preferido da minha filha! 🥰  #papelaria #diadascriancas #caneta #viral ",
+                    "views": 623200,
+                    "likes": 16000,
+                    "comments": 105,
+                    "saves": 1582,
+                    "shares": 601,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:39:43.678Z",
+                    "engagement": {
+                        "save_rate": 0.254,
+                        "share_rate": 0.096,
+                        "comment_rate": 0.017,
+                        "like_rate": 2.567
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 42,
+                        "volume": 37
+                    },
+                    "score": 40,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "kit de canetas"
+                }
+            ]
+        },
+        {
+            "productName": "capa protetora de colchão",
+            "productLabel": "Capa Protetora De Colchão",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@ailton.achados369"
+            ],
+            "avgScore": 36,
+            "topScore": 36,
+            "topLabel": "📊 Monitorar",
+            "hasViral": false,
+            "totalViews": 2400000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@ailton.achados369/video/7556584222819880204",
+                    "creator": "ailton.achados369",
+                    "desc": "Capa Protetora Matelada para colchão ✨ protege contra líquidos, poeira e sujeira, fica firme e macia. Só R$29,10 na loja oficial do TikTok Shop com frete grátis. Resgate a sua com segurança! #TikTokMeFezComprar #colchão #cama #tiktokshop ",
+                    "views": 2400000,
+                    "likes": 17300,
+                    "comments": 486,
+                    "saves": 2654,
+                    "shares": 4749,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:29:13.088Z",
+                    "engagement": {
+                        "save_rate": 0.111,
+                        "share_rate": 0.198,
+                        "comment_rate": 0.02,
+                        "like_rate": 0.721
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 21,
+                        "volume": 52
+                    },
+                    "score": 36,
+                    "label": "📊 Monitorar",
+                    "ai_product_name": "capa protetora de colchão"
+                }
+            ]
+        },
+        {
+            "productName": "calça unissex jogger premium",
+            "productLabel": "Calça Unissex Jogger Premium",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@lealrecomenda"
+            ],
+            "avgScore": 34,
+            "topScore": 34,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 2500000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@lealrecomenda/video/7616056937469250837",
+                    "creator": "lealrecomenda",
+                    "desc": "Calça Unissex Jogger Premium P",
+                    "views": 2500000,
+                    "likes": 12500,
+                    "comments": 116,
+                    "saves": 2940,
+                    "shares": 1580,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:49:46.213Z",
+                    "engagement": {
+                        "save_rate": 0.118,
+                        "share_rate": 0.063,
+                        "comment_rate": 0.005,
+                        "like_rate": 0.5
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 31,
+                        "volume": 36
+                    },
+                    "score": 34,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "calça unissex jogger premium"
+                }
+            ]
+        },
+        {
+            "productName": "fone de ouvido",
+            "productLabel": "Fone De Ouvido",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@juliaalbuqe"
+            ],
+            "avgScore": 33,
+            "topScore": 33,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 5100000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@juliaalbuqe/video/7580501754442206485",
+                    "creator": "juliaalbuqe",
+                    "desc": "Fone de ouvido 🎧💗. #dicas #comprinhas #tiktokshop ",
+                    "views": 5100000,
+                    "likes": 43300,
+                    "comments": 323,
+                    "saves": 7505,
+                    "shares": 2686,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:08:17.600Z",
+                    "engagement": {
+                        "save_rate": 0.147,
+                        "share_rate": 0.053,
+                        "comment_rate": 0.006,
+                        "like_rate": 0.849
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 13,
+                        "volume": 54
+                    },
+                    "score": 33,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "fone de ouvido"
+                }
+            ]
+        },
+        {
+            "productName": "sabão",
+            "productLabel": "Sabão",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@produtinhosbru"
+            ],
+            "avgScore": 32,
+            "topScore": 32,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 2000000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@produtinhosbru/video/7615959724357455125",
+                    "creator": "produtinhosbru",
+                    "desc": "Eu não sabia que precisava disso até testar 😳🧼  #rodomagico #dicasdelimpeza #utilidadesdomesticas #achadinhos #tiktokshopbrasil",
+                    "views": 2000000,
+                    "likes": 53100,
+                    "comments": 138,
+                    "saves": 6146,
+                    "shares": 2311,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:02:58.407Z",
+                    "engagement": {
+                        "save_rate": 0.307,
+                        "share_rate": 0.116,
+                        "comment_rate": 0.007,
+                        "like_rate": 2.655
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 7,
+                        "volume": 57
+                    },
+                    "score": 32,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "sabão"
+                }
+            ]
+        },
+        {
+            "productName": "tapete",
+            "productLabel": "Tapete",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@ocasalcg"
+            ],
+            "avgScore": 32,
+            "topScore": 32,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 765800,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@ocasalcg/video/7565175142993710344",
+                    "creator": "ocasalcg",
+                    "desc": "A gente cansou daquele tapete de pano que fica feio, vive molhado e ainda deixa o banheiro com cheiro ruim 😩 Esse de pedra absorve a água super rápido, deixa o chão seco e não escorrega. Além de mais bonito, é muito mais seguro e higiênico 👌🏻 Id do tapete: 7D0MM1-91PC @Mercado Livre (cole no buscador do app) #comprasonline #comprasdecasa #MeusFavsDoMercadoLivre #MercadoLivre",
+                    "views": 765800,
+                    "likes": 5084,
+                    "comments": 43,
+                    "saves": 629,
+                    "shares": 1215,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:18:31.584Z",
+                    "engagement": {
+                        "save_rate": 0.082,
+                        "share_rate": 0.159,
+                        "comment_rate": 0.006,
+                        "like_rate": 0.664
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 34,
+                        "volume": 31
+                    },
+                    "score": 32,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "tapete"
+                }
+            ]
+        },
+        {
+            "productName": "vídeo game stick",
+            "productLabel": "Vídeo Game Stick",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@renan_soares_shop"
+            ],
+            "avgScore": 31,
+            "topScore": 31,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 3800000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@renan_soares_shop/video/7610511598729432338",
+                    "creator": "renan_soares_shop",
+                    "desc": "Vídeo game stick ",
+                    "views": 3800000,
+                    "likes": 22600,
+                    "comments": 303,
+                    "saves": 3637,
+                    "shares": 4483,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:27:37.407Z",
+                    "engagement": {
+                        "save_rate": 0.096,
+                        "share_rate": 0.118,
+                        "comment_rate": 0.008,
+                        "like_rate": 0.595
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 10,
+                        "volume": 52
+                    },
+                    "score": 31,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "vídeo game stick"
+                }
+            ]
+        },
+        {
+            "productName": "caixa de espuma com escova",
+            "productLabel": "Caixa De Espuma Com Escova",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@cheirinhodocedemae"
+            ],
+            "avgScore": 30,
+            "topScore": 30,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 1400000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@cheirinhodocedemae/video/7614661963804577044",
+                    "creator": "cheirinhodocedemae",
+                    "desc": "Produto que facilita MUITO a limpeza do dia a dia 🧼✨ Essa caixa de espuma com escova faz espuma enquanto você esfrega, deixando tudo mais rápido e sem desperdiçar sabão. Perfeita pra lavar roupa, tênis, pia e até panelas. Quer o produto? 🛒 O ID do produto está nos comentários! #achadinhos #achadinhostiktok #achadinhosshopee #tiktokmademebuyit #produtosvirais ",
+                    "views": 1400000,
+                    "likes": 7609,
+                    "comments": 149,
+                    "saves": 1432,
+                    "shares": 2950,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:29:23.685Z",
+                    "engagement": {
+                        "save_rate": 0.102,
+                        "share_rate": 0.211,
+                        "comment_rate": 0.011,
+                        "like_rate": 0.543
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 15,
+                        "volume": 45
+                    },
+                    "score": 30,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "caixa de espuma com escova"
+                }
+            ]
+        },
+        {
+            "productName": "novo aparelho de barbear elétrico",
+            "productLabel": "Novo Aparelho De Barbear Elétrico",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@princessbree_._"
+            ],
+            "avgScore": 26,
+            "topScore": 26,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 226400,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@princessbree_._/video/7610916268924783902",
+                    "creator": "princessbree_._",
+                    "desc": "If you’re still using regular razors… this is your sign 🚩 Nick-proof ✔️ Glides smoothly ✔️ Waterproof for shower use ✔️ Your skin deserves an upgrade 😍 #TikTokMadeMeBuyIt #ElectricRazor #SmoothFinish #NoMoreCuts #ShowerRoutine    ",
+                    "views": 226400,
+                    "likes": 1365,
+                    "comments": 34,
+                    "saves": 537,
+                    "shares": 310,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:31:00.594Z",
+                    "engagement": {
+                        "save_rate": 0.237,
+                        "share_rate": 0.137,
+                        "comment_rate": 0.015,
+                        "like_rate": 0.603
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 24,
+                        "volume": 27
+                    },
+                    "score": 26,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "novo aparelho de barbear elétrico"
+                }
+            ]
+        },
+        {
+            "productName": "caixa de som",
+            "productLabel": "Caixa De Som",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@amanda.shop.creator"
+            ],
+            "avgScore": 24,
+            "topScore": 24,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 178900,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@amanda.shop.creator/video/7621658083474820360",
+                    "creator": "amanda.shop.creator",
+                    "desc": "Será que essa aguenta uma JBL? #caixadesom #caixadesombluetooth #caixadesompotente ",
+                    "views": 178900,
+                    "likes": 2982,
+                    "comments": 89,
+                    "saves": 385,
+                    "shares": 71,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:46:13.935Z",
+                    "engagement": {
+                        "save_rate": 0.215,
+                        "share_rate": 0.04,
+                        "comment_rate": 0.05,
+                        "like_rate": 1.667
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 48,
+                        "volume": 0
+                    },
+                    "score": 24,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "caixa de som"
+                }
+            ]
+        },
+        {
+            "productName": "pulverizador",
+            "productLabel": "Pulverizador",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@amanda_doshop"
+            ],
+            "avgScore": 24,
+            "topScore": 24,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 1400000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@amanda_doshop/video/7577934233117691154",
+                    "creator": "amanda_doshop",
+                    "desc": "✨ Esse pulverizador é simplesmente perfeito! Ele deixa qualquer superfície cheia de espuma em segundos, espalha super bem e economiza produto. Ideal pra lavar carro, moto, casa, jardim… tudo fica limpinho e sem esforço! 🚿💦 E o melhor: custa menos de R$35 e vale cada centavo! 💙🔥 Corre garantir porque esgota rápido! 🛒⚡ #pulverizador #fy #tiktokmefezcomprar  #tiktokshopbrasil  #achadinhos😍💦✨ ",
+                    "views": 1400000,
+                    "likes": 7986,
+                    "comments": 228,
+                    "saves": 1011,
+                    "shares": 1408,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:29:38.690Z",
+                    "engagement": {
+                        "save_rate": 0.072,
+                        "share_rate": 0.101,
+                        "comment_rate": 0.016,
+                        "like_rate": 0.57
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 6,
+                        "volume": 41
+                    },
+                    "score": 24,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "pulverizador"
+                }
+            ]
+        },
+        {
+            "productName": "chave catraca",
+            "productLabel": "Chave Catraca",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@renan_soares_shop"
+            ],
+            "avgScore": 21,
+            "topScore": 21,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 11700000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@renan_soares_shop/video/7612657790494035208",
+                    "creator": "renan_soares_shop",
+                    "desc": "Chave catraca 12 peças ",
+                    "views": 11700000,
+                    "likes": 30400,
+                    "comments": 159,
+                    "saves": 3090,
+                    "shares": 2916,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:48:29.631Z",
+                    "engagement": {
+                        "save_rate": 0.026,
+                        "share_rate": 0.025,
+                        "comment_rate": 0.001,
+                        "like_rate": 0.26
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 0,
+                        "volume": 42
+                    },
+                    "score": 21,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "chave catraca"
+                }
+            ]
+        },
+        {
+            "productName": "jogo de bits",
+            "productLabel": "Jogo De Bits",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@fabiopintar"
+            ],
+            "avgScore": 20,
+            "topScore": 20,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 372000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@fabiopintar/video/7623807291564788999",
+                    "creator": "fabiopintar",
+                    "desc": "Esse jogo de Bits Philips k5 magnéticos são muito bons para quem procura precisão e durabilidade para trabalhar! #furadeira  #parafusadeira  #chave  #kit  #broca ",
+                    "views": 372000,
+                    "likes": 2274,
+                    "comments": 40,
+                    "saves": 306,
+                    "shares": 306,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T19:48:49.521Z",
+                    "engagement": {
+                        "save_rate": 0.082,
+                        "share_rate": 0.082,
+                        "comment_rate": 0.011,
+                        "like_rate": 0.611
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 34,
+                        "volume": 6
+                    },
+                    "score": 20,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "jogo de bits"
+                }
+            ]
+        },
+        {
+            "productName": "nivelador a laser portátil",
+            "productLabel": "Nivelador A Laser Portátil",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@evertonachadinhos"
+            ],
+            "avgScore": 20,
+            "topScore": 20,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 1100000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@evertonachadinhos/video/7526808502266891526",
+                    "creator": "evertonachadinhos",
+                    "desc": "Laser verde ultra forte...#lazer #laserverde #tiktokbrasil #foryoupage #foryo ",
+                    "views": 1100000,
+                    "likes": 10600,
+                    "comments": 142,
+                    "saves": 1202,
+                    "shares": 527,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:11:46.650Z",
+                    "engagement": {
+                        "save_rate": 0.109,
+                        "share_rate": 0.048,
+                        "comment_rate": 0.013,
+                        "like_rate": 0.964
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 10,
+                        "volume": 29
+                    },
+                    "score": 20,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "laser"
+                }
+            ]
+        },
+        {
+            "productName": "kit de body splash",
+            "productLabel": "Kit De Body Splash",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@pedrovitoroficial_"
+            ],
+            "avgScore": 15,
+            "topScore": 15,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 518000,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@pedrovitoroficial_/video/7605986018948402453",
+                    "creator": "pedrovitoroficial_",
+                    "desc": "Kit 2 body splash masculino",
+                    "views": 518000,
+                    "likes": 2815,
+                    "comments": 55,
+                    "saves": 396,
+                    "shares": 460,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:35:00.990Z",
+                    "engagement": {
+                        "save_rate": 0.076,
+                        "share_rate": 0.089,
+                        "comment_rate": 0.011,
+                        "like_rate": 0.543
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 2,
+                        "volume": 29
+                    },
+                    "score": 15,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "kit de body splash"
+                }
+            ]
+        },
+        {
+            "productName": "kit de travesseiro padrão hotel",
+            "productLabel": "Kit De Travesseiro Padrão Hotel",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@abigail.ivy55"
+            ],
+            "avgScore": 13,
+            "topScore": 13,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 360200,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@abigail.ivy55/video/7615920670437821717",
+                    "creator": "abigail.ivy55",
+                    "desc": "Kit 2 Travesseiro Padrão Hotel #TikTokMadeMeBuylt、#DealDrops、#Spotlight",
+                    "views": 360200,
+                    "likes": 1863,
+                    "comments": 17,
+                    "saves": 375,
+                    "shares": 240,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:30:22.662Z",
+                    "engagement": {
+                        "save_rate": 0.104,
+                        "share_rate": 0.067,
+                        "comment_rate": 0.005,
+                        "like_rate": 0.517
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 3,
+                        "volume": 23
+                    },
+                    "score": 13,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "kit de travesseiro padrão hotel"
+                }
+            ]
+        },
+        {
+            "productName": "pó compacto",
+            "productLabel": "Pó Compacto",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@nandathyll"
+            ],
+            "avgScore": 13,
+            "topScore": 13,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 509300,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@nandathyll/video/7597138110513745160",
+                    "creator": "nandathyll",
+                    "desc": "Pó compacto a prova d’água #tiktokshop #pocompacto #sacelady ",
+                    "views": 509300,
+                    "likes": 2603,
+                    "comments": 123,
+                    "saves": 578,
+                    "shares": 400,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T21:19:18.047Z",
+                    "engagement": {
+                        "save_rate": 0.113,
+                        "share_rate": 0.079,
+                        "comment_rate": 0.024,
+                        "like_rate": 0.511
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 4,
+                        "volume": 22
+                    },
+                    "score": 13,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "pó compacto"
+                }
+            ]
+        },
+        {
+            "productName": "parafusadeira furadeira",
+            "productLabel": "Parafusadeira Furadeira",
+            "confidence": "low",
+            "totalVideos": 1,
+            "creators": [
+                "@lealrecomenda"
+            ],
+            "avgScore": 0,
+            "topScore": 0,
+            "topLabel": "💤 Baixo potencial",
+            "hasViral": false,
+            "totalViews": 107500,
+            "videos": [
+                {
+                    "url": "https://www.tiktok.com/@lealrecomenda/video/7624198146071072020",
+                    "creator": "lealrecomenda",
+                    "desc": "Parafusadeira Furadeira 48V 2 ",
+                    "views": 107500,
+                    "likes": 138,
+                    "comments": 2,
+                    "saves": 39,
+                    "shares": 25,
+                    "source": "json",
+                    "scrapedAt": "2026-04-05T20:27:47.067Z",
+                    "engagement": {
+                        "save_rate": 0.036,
+                        "share_rate": 0.023,
+                        "comment_rate": 0.002,
+                        "like_rate": 0.128
+                    },
+                    "viral_bonus": false,
+                    "score_detail": {
+                        "rate": 0,
+                        "volume": 0
+                    },
+                    "score": 0,
+                    "label": "💤 Baixo potencial",
+                    "ai_product_name": "parafusadeira furadeira"
+                }
+            ]
+        }
+    ]
+}
