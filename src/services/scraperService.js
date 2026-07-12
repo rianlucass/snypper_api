@@ -39,6 +39,130 @@ async function retry(fn, attempts = 3, delayMs = 4000) {
 // Scrape de links (busca TikTok)
 // ---------------------------------------------------------------------------
 
+async function scrapeCreators({ categories = ["all"] } = {}) {
+    // Carrega perfis
+    const configPath = path.join(__dirname, "../data/creator_targets.json");
+    if (!fs.existsSync(configPath)) throw new Error("creator_targets.json não encontrado");
+    const config = JSON.parse(fs.readFileSync(configPath, "utf-8"));
+
+    let creatorsToScrape = [];
+    if (categories.includes("all")) {
+        Object.values(config).forEach(arr => creatorsToScrape.push(...arr));
+    } else {
+        categories.forEach(cat => {
+            if (config[cat]) creatorsToScrape.push(...config[cat]);
+        });
+    }
+
+    // Unicidade
+    creatorsToScrape = [...new Set(creatorsToScrape)];
+    if (creatorsToScrape.length === 0) throw new Error("Nenhum criador encontrado nas categorias.");
+
+    const browser = await puppeteer.launch({ 
+        headless: false, 
+        defaultViewport: null,
+        args: [
+            '--disable-blink-features=AutomationControlled',
+            '--no-sandbox',
+            '--disable-setuid-sandbox'
+        ]
+    });
+    
+    const page = await browser.newPage();
+    
+    // Stealth
+    await page.evaluateOnNewDocument(() => {
+        Object.defineProperty(navigator, 'webdriver', { get: () => undefined });
+    });
+    await page.setUserAgent(
+        'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/124.0.0.0 Safari/537.36'
+    );
+    await page.setExtraHTTPHeaders({
+        'Accept-Language': 'pt-BR,pt;q=0.9,en-US;q=0.8,en;q=0.7',
+        'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8'
+    });
+    
+    page.setDefaultNavigationTimeout(45000);
+
+    const allVideos = [];
+
+    for (const criador of creatorsToScrape) {
+        console.log(`[ScrapeCreator] Entrando no perfil: @${criador}`);
+
+        await page.goto(`https://www.tiktok.com/@${criador}`, { waitUntil: "networkidle2" });
+        await new Promise(resolve => setTimeout(resolve, 4000));
+
+        // Tenta fechar o Modal de Login chato se aparecer
+        try {
+            const loginCloseBtn = await page.$('[data-e2e="modal-close-inner-button"]');
+            if (loginCloseBtn) {
+                await loginCloseBtn.click();
+                await new Promise(r => setTimeout(r, 1000));
+            }
+        } catch(e) {}
+
+        // Sistema Interativo de Captcha - Espera você resolver o quebra-cabeça
+        let sliderCaptcha = await page.$('div[id*="captcha"], div[class*="captcha"]');
+        let retries = 0;
+        
+        if (sliderCaptcha) {
+            console.warn(`\n[ScrapeCreator] 🚨 CAPTCHA DETECTADO no perfil @${criador}!`);
+            console.warn(`[ScrapeCreator] 🚨 VÁ NO NAVEGADOR E ARRASTE O QUEBRA-CABEÇA AGORA... O BOT VAI ESPERAR 2 MINUTOS.\n`);
+            
+            while (sliderCaptcha && retries < 60) {
+                await new Promise(r => setTimeout(r, 2000));
+                sliderCaptcha = await page.$('div[id*="captcha"], div[class*="captcha"]');
+                retries++;
+            }
+            console.log(`[ScrapeCreator] ✅ Captcha sumiu! Retomando coleta...`);
+            await new Promise(r => setTimeout(r, 3000)); // Tempo para os vídeos renderizarem
+        }
+
+        // detecta erro fatal (Robot page) antes de prosseguir
+        const bloqueado = await page.evaluate(() => {
+            return document.title.includes('Robot') || document.title.includes('Captcha');
+        });
+
+        if (bloqueado) {
+            console.warn(`[ScrapeCreator] ⚠️ "@${criador}" — bloqueio letal de rede detectado, pulando...`);
+            continue;
+        }
+
+        // Puxa links dos vídeos (até 15 vídeos é o default inicial do layout)
+        let videos = await page.evaluate(() => {
+            // "user-post-item" container -> "a[href*='/video/']"
+            const cards = Array.from(document.querySelectorAll('[data-e2e="user-post-item"]'));
+            return cards
+                .map(card => ({ link: card.querySelector('a[href*="/video/"]')?.href }))
+                .filter(v => v.link)
+                .slice(0, 15); // limitamos a 15 vídeos super frescos
+        });
+
+        if (videos.length === 0) {
+            console.warn(`[ScrapeCreator] ⚠️ Nenhum vídeo encontrado em "@${criador}", possivelmente vazio ou mudado o layout.`);
+        }
+
+        console.log(`[ScrapeCreator] "@${criador}" → ${videos.length} vídeos raptados`);
+        allVideos.push(...videos);
+
+        // Salvamento progressivo
+        const uniqueProgressivo = Array.from(new Map(allVideos.map(v => [v.link, v])).values());
+        const filePath = path.join(__dirname, "../data/videos.json");
+        fs.writeFileSync(filePath, JSON.stringify(uniqueProgressivo, null, 2));
+
+        if (criador !== creatorsToScrape[creatorsToScrape.length - 1]) {
+            const pause = Math.floor(Math.random() * 3000) + 4000;
+            await new Promise(resolve => setTimeout(resolve, pause));
+        }
+    }
+
+    await browser.close();
+
+    const unique = Array.from(new Map(allVideos.map(v => [v.link, v])).values());
+    console.log(`[ScrapeCreator] Concluído! Total salvo: ${unique.length} vídeos frescos de ${creatorsToScrape.length} criadores.`);
+    return unique;
+}
+
 async function scrapeTikTok({ terms = ["achadinhos"], minViews = 100000 } = {}) {
     const browser = await puppeteer.launch({ 
         headless: false, 
@@ -201,7 +325,8 @@ async function getVideoDataFromPage(page, url) {
                         shares:   stats.shareCount   ?? null,
                         views:    stats.playCount    ?? null,
                         desc:     itemStruct?.desc   ?? null,
-                        creator:  itemStruct?.author?.uniqueId ?? null
+                        creator:  itemStruct?.author?.uniqueId ?? null,
+                        createTime: itemStruct?.createTime ?? null
                     };
                 }
             } catch (e) { /* fallback abaixo */ }
@@ -221,7 +346,8 @@ async function getVideoDataFromPage(page, url) {
             views:    getText('[data-e2e="video-views"]'),
             desc:     getText('[data-e2e="browse-video-desc"]'),
             creator:  document.querySelector('[data-e2e="browse-video-desc"] a[href*="/@"]')
-                        ?.href?.split('/@')[1]?.split('?')[0] ?? null
+                        ?.href?.split('/@')[1]?.split('?')[0] ?? null,
+            createTime: null
         };
     });
 
@@ -240,6 +366,7 @@ async function getVideoDataFromPage(page, url) {
         comments: toNumber(data.comments),
         saves:    toNumber(data.saves),
         shares:   toNumber(data.shares),
+        postedAt: data.createTime ? new Date(parseInt(data.createTime) * 1000).toISOString() : null,
         source:   data.source,
         scrapedAt: new Date().toISOString()
     };
@@ -384,6 +511,7 @@ async function rescoreResults() {
 
 export default {
     scrapeTikTok,
+    scrapeCreators,
     getVideoData,
     processVideoBatch,
     rescoreResults

@@ -5963,5 +5963,92 @@
     "skipped": true,
     "views": 2364,
     "scrapedAt": "2026-04-05T21:23:00.064Z"
+  },
+  {
+    "url": "https://www.tiktok.com/@achadinhosshopeedaanny_/video/7583518034673814804",
+    "creator": "achadinhosshopeedaanny_",
+    "desc": "🔗 Link do Produto nos comentários #limpador #viral #shopee #achadinhos #vapor @Achadinhos Shopee da Anny @Achadinhos Shopee da Anny @Achadinhos Shopee da Anny ",
+    "views": 276000,
+    "likes": 3609,
+    "comments": 528,
+    "saves": 2312,
+    "shares": 11600,
+    "postedAt": "2025-12-14T01:23:14.000Z",
+    "source": "json",
+    "scrapedAt": "2026-04-07T01:04:02.257Z",
+    "engagement": {
+      "save_rate": 0.838,
+      "share_rate": 4.203,
+      "comment_rate": 0.191,
+      "like_rate": 1.308
+    },
+    "viral_bonus": true,
+    "score_detail": {
+      "rate": 50,
+      "volume": 0,
+      "age_days": 113,
+      "recency_multiplier": 0.5
+    },
+    "score": 13,
+    "label": "💤 Baixo potencial",
+    "ai_product_name": null
+  },
+  {
+    "url": "https://www.tiktok.com/@achadinhosdagebr/video/7547524391542770950",
+    "creator": "achadinhosdagebr",
+    "desc": "‼️‼️LINK NA BIO‼️‼️ ✨ Detalhes que transformam sua cozinha ✨ 🥰 Pote de Vidro Âmbar Hermético Decor Afeto Coração. Charme, organização e um toque especial na decoração. 🔎 Busque pelo ID na barra de pesquisa da Shopee: BGM-BMA-RSR #pote #vidro #cozinha #decoracao #achadinhos ",
+    "views": 730700,
+    "likes": 11300,
+    "comments": 1318,
+    "saves": 6038,
+    "shares": 34600,
+    "postedAt": "2025-09-08T01:29:31.000Z",
+    "source": "json",
+    "scrapedAt": "2026-04-07T01:03:49.607Z",
+    "engagement": {
+      "save_rate": 0.826,
+      "share_rate": 4.735,
+      "comment_rate": 0.18,
+      "like_rate": 1.546
+    },
+    "viral_bonus": true,
+    "score_detail": {
+      "rate": 100,
+      "volume": 33,
+      "age_days": 210,
+      "recency_multiplier": 0.1
+    },
+    "score": 7,
+    "label": "💤 Baixo potencial",
+    "ai_product_name": "pote de vidro"
+  },
+  {
+    "url": "https://www.tiktok.com/@promosde.casa/video/7353964523159653665",
+    "creator": "promosde.casa",
+    "desc": "Itens lindos e luxuosos que encontrei na Shopee ✨🤍. #achadinhos #shopee #shopeebrasil #luxo #comprinhas ",
+    "views": 8500000,
+    "likes": 482300,
+    "comments": 15700,
+    "saves": 160926,
+    "shares": 67500,
+    "postedAt": "2024-04-04T10:58:29.000Z",
+    "source": "json",
+    "scrapedAt": "2026-04-07T01:04:14.017Z",
+    "engagement": {
+      "save_rate": 1.893,
+      "share_rate": 0.794,
+      "comment_rate": 0.185,
+      "like_rate": 5.674
+    },
+    "viral_bonus": false,
+    "score_detail": {
+      "rate": 0,
+      "volume": 100,
+      "age_days": 732,
+      "recency_multiplier": 0.1
+    },
+    "score": 5,
+    "label": "💤 Baixo potencial",
+    "ai_product_name": null
   }
 ]

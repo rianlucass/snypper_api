@@ -70,8 +70,25 @@ function calculateScore(videos) {
     const volumeScores = normalizeMinMax(withComponents.map(v => v._volume_raw));
 
     const withScore = withComponents.map((video, i) => {
-        // Score final: 50% taxa + 50% volume
-        const score = Math.round(rateScores[i] * 0.50 + volumeScores[i] * 0.50);
+        // Score final base: 50% taxa + 50% volume
+        const baseScore = rateScores[i] * 0.50 + volumeScores[i] * 0.50;
+        
+        let age_days = null;
+        let recency_multiplier = 1.0;
+        
+        if (video.postedAt) {
+            const diffTime = Math.abs(new Date() - new Date(video.postedAt));
+            age_days = Math.floor(diffTime / (1000 * 60 * 60 * 24));
+            
+            if (age_days <= 7) recency_multiplier = 1.5;
+            else if (age_days <= 30) recency_multiplier = 1.0;
+            else if (age_days <= 120) recency_multiplier = 0.5;
+            else recency_multiplier = 0.1;
+        }
+
+        let score = Math.round(baseScore * recency_multiplier);
+        if (score > 100) score = 100;
+        
         const label = getLabel(score);
 
         const { _rates, _rate_raw, _volume_raw, _viral_bonus, ...rest } = video;
@@ -87,7 +104,9 @@ function calculateScore(videos) {
             viral_bonus: _viral_bonus,
             score_detail: {
                 rate:   Math.round(rateScores[i]),
-                volume: Math.round(volumeScores[i])
+                volume: Math.round(volumeScores[i]),
+                age_days,
+                recency_multiplier
             },
             score,
             label

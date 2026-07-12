@@ -91,6 +91,9 @@ function groupByProduct(videos, { minVideos = 1 } = {}) {
                 : 0;
             const topScore  = scores.length ? Math.max(...scores) : 0;
             const totalViews = g.videos.reduce((s, v) => s + (v.views || 0), 0);
+            
+            const ages = g.videos.map(v => v.score_detail && v.score_detail.age_days).filter(a => a !== null && a !== undefined);
+            const avgAgeDays = ages.length ? Math.round(ages.reduce((a, b) => a + b, 0) / ages.length) : null;
 
             // Filtra os criadores únicos desse produto
             const creators = [...new Set(g.videos.map(v =>
@@ -118,6 +121,7 @@ function groupByProduct(videos, { minVideos = 1 } = {}) {
                 avgScore,
                 topScore,
                 topLabel,
+                avgAgeDays,
                 hasViral,
                 totalViews,
                 videos: g.videos

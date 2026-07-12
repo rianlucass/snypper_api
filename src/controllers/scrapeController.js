@@ -29,6 +29,25 @@ async function scrape(req, res) {
   }
 }
 
+async function scrapeCreators(req, res) {
+  try {
+    const categories = Array.isArray(req.body.categories) ? req.body.categories : ["all"];
+    
+    const videos = await scraperService.scrapeCreators({ categories });
+
+    return res.status(200).json({
+      message: `Scrape de criadores finalizado: ${videos.length} vídeos extraídos.`,
+      categories,
+      total: videos.length,
+      data: videos
+    });
+
+  } catch (error) {
+    console.error(error);
+    return res.status(500).json({ message: "Erro ao realizar scraping nos criadores", error: error.message });
+  }
+}
+
 async function getVideoData(req, res) {
   try {
     const { url } = req.body;
@@ -174,5 +193,6 @@ export default {
   processBatch,
   rescore,
   group,
-  enrichResults
+  enrichResults,
+  scrapeCreators
 };
